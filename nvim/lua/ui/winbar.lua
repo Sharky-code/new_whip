@@ -21,7 +21,7 @@ function M.get_winbar()
 	local filetype = vim.bo.filetype
 	-- The following space uses the "⠀" character - a braile unicode character, due to automatic
 	-- shortening when using regular space
-	local text = "⠀" .. string.upper(filetype) .. " /" 
+	local text = "⠀" .. string.upper(filetype) ..  " /"
 	if navic.is_available() then
 		return text .. " " .. navic.get_location()
 	else
@@ -35,7 +35,7 @@ function M.set_winbar()
 		vim.opt_local.winbar = nil
 		return
 	end
-	vim.opt_local.winbar = "%{%v:lua.require'ui.winbar'.get_winbar()%}"
+	vim.opt_local.winbar = "%{%v:lua.require('ui.winbar').get_winbar()%}"
 end
 
 return M
