@@ -14,6 +14,7 @@ require("lsp.cmp")
 require("plugins.navic")
 require("plugins.nvimtree")
 require("plugins.treesitter")
+require("plugins.indentblankline")
 
 require("ui.winbar")
 require("ui.statusbar")
