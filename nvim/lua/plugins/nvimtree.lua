@@ -66,7 +66,7 @@ nvim_tree.setup {
     require_confirm = true
   },
 	renderer = {
-		root_folder_label = false,
+		root_folder_label = true,  -- false
 	}
 }
-require("nvim-tree.view").View.winopts.foldcolumn = '4'
+require("nvim-tree.view").View.winopts.foldcolumn = '2'  -- 4

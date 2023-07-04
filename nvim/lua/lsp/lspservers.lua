@@ -1,9 +1,7 @@
 local lspconfig = require("lspconfig")
 local navic = require("nvim-navic")
-local lsp_mappings = require("lsp.lspmappings")
 
 lspconfig.pyright.setup {
-	lsp_mappings.lsp_keymaps(),
 	settings = {
     python = {
       analysis = {
@@ -13,7 +11,6 @@ lspconfig.pyright.setup {
   },
 }
 lspconfig.lua_ls.setup {
-	lsp_mappings.lsp_keymaps(),
 	settings = {
 		Lua = {
 			runtime = {

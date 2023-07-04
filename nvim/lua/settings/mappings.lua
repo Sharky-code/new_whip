@@ -1,10 +1,9 @@
 local nest = require('nest')
 nest.applyKeymaps {
-	--{"<F1><F2>", ":HopAnywhere <CR>"},
-	--{"<F2>", ":Gitsigns toggle_signs <CR>"},
-	--{"<F4>", ":Telescope <CR>"},
+	{"<F2>", ":Gitsigns toggle_signs <CR>"},
+	{"<F4>", ":Telescope <CR>"},
 	{"<F5>", ":NvimTreeToggle <CR>"},
-	--{"<F6>", ":ToggleTerm <CR>"},
+	{"<F6>", ":ToggleTerm <CR>"},
 	{"<F1>", "<cmd>lua require('settings.runfile').hi(vim.fn.expand('%'), vim.fn.expand('%:r')) <CR>"},
 
 

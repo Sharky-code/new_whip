@@ -15,3 +15,7 @@ vim.api.nvim_set_hl(0, "StatusLineBold", {
 	bg = "#7CA2DE",
 	fg = vim.api.nvim_get_hl_by_name("Normal", true).background
 })
+vim.api.nvim_set_hl(0, "NvimTreeRootFolder", {
+	bg = vim.api.nvim_get_hl_by_name("NvimTreeNormal", true).background,
+	fg = vim.api.nvim_get_hl_by_name("NvimTreeNormal", true).background
+})
