@@ -4,7 +4,7 @@ nest.applyKeymaps {
 	{"<F4>", ":Telescope <CR>"},
 	{"<F5>", ":NvimTreeToggle <CR>"},
 	{"<F6>", ":ToggleTerm <CR>"},
-	{"<F1>", "<cmd>lua require('settings.runfile').hi(vim.fn.expand('%'), vim.fn.expand('%:r')) <CR>"},
+	{"<F1>", "<cmd>lua require('settings.runfile').runfile(vim.fn.expand('%'), vim.fn.expand('%:r')) <CR>"},
 
 
 	{mode = "n",
@@ -17,9 +17,12 @@ nest.applyKeymaps {
 		{"<Leader>o", "o<Esc>"},
 		{"<Leader>O", "O<Esc>"},
 		{"<Leader>J", "kJ"},
+		{"<Leader>e", "<cmd>Neotree toggle<cr>"},
+		{"<Leader>o", "<cmd>Neotree focus<cr>"},
+		{"<esc>", "<cmd>Neotree close<cr>"},
+		{"<leader>gs", "<cmd>Neotree git_status<cr>"}
 	},
 
-	{mode = "v", {"y", "\"+y"} },
 	{mode = "t",
 		{"<C-K>", "<C-c><C-\\><C-n><C-w>k"},
 		{"<Esc>", "<C-c><C-\\><C-n><C-w>k"},

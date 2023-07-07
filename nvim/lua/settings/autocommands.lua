@@ -2,8 +2,9 @@ vim.cmd[[
 	"au WinEnter, BufWinEnter, BufEnter * lua require('ui.winbar').set_winbar()
 	au Filetype * lua require"ui.winbar".set_winbar()	
 
-	au BufWinEnter NvimTree_1 setlocal statusline=%#Normal#
+	au WinEnter,BufEnter * setlocal statusline=%{%v:lua.require('ui.statusbar').statusbar_active()%}
+	au WinLeave,BufLeave * setlocal statusline=%{%v:lua.require('ui.statusbar').statusbar_inactive()%}
+
+	au BufWinEnter NvimTree setlocal statusline=%#Normal#
 	au Filetype NvimTree hi FoldColumn guibg=None
-	
-	au Filetype * setlocal statusline=%{%v:lua.require('ui.statusbar').statusbar_active()%}
 ]]

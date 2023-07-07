@@ -1,5 +1,20 @@
 local M = {}
 
+local statusbar_filetype_exclude = {
+  "help",
+  "startify",
+  "dashboard",
+  "packer",
+  "neogitstatus",
+  "NvimTree",
+  "Trouble",
+  "alpha",
+  "lir",
+  "Outline",
+  "spectre_panel",
+  "toggleterm",
+}
+
 M.components = {
 	mode = function ()
 		local modes = {
@@ -91,21 +106,30 @@ M.components = {
 		end
 		return " %P %l:%c "
 	end
-
 }
 
 -- TODO: vim.api.nvim_buf_line_count(0) and nerd font symbols to show location of file
+-- LEFT %= MIDDLE %= RIGHT
 function M.statusbar_active()
 	local statusbar_text = ""
-	-- LEFT %= MIDDLE %= RIGHT
-	statusbar_text = statusbar_text .. "  " .. M.components.modes_colours() .. M.components.mode() .. 
+	if vim.tbl_contains(statusbar_filetype_exclude, vim.bo.filetype) then
+		vim.opt_local.statusline = M.statusbar_inactive()
+		return
+	end
+	statusbar_text = statusbar_text .. "%#StatusLine#  " .. M.components.modes_colours() .. M.components.mode() ..
 		"%#StatusLine#" .. "  " .. M.components.file_name() .. "  " ..
-		"%=" ..  "%=%#StatusLine#" .. M.components.lsp() .. "  " 		.. M.components.line_info() .. "  "
+		"%=" ..  "%=%#StatusLine#" ..  "  " .. "%{get(b:,'gitsigns_status','')}" .. M.components.lsp() .. "  " ..
+		M.components.line_info() .. "  " 
 	return statusbar_text
 end
 
-function M.statusbar_inactive() 
-	return "  " .. M.components.file_name()
+function M.statusbar_inactive()
+	local statusbar_text = ""
+	if vim.tbl_contains({"NvimTree"}, vim.bo.filetype) then
+		return "%#NvimTreeNormal#"
+	end
+	statusbar_text = statusbar_text  .. "%#StatusLineNC#  " .. M.components.file_name()	
+	return statusbar_text
 end
 
 return M

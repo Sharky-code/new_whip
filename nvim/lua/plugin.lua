@@ -6,14 +6,14 @@ return require("packer").startup(function(use)
 	use "folke/tokyonight.nvim" 
 	-- Plugins
 	use {
-    "SmiteshP/nvim-navic",
+	    "SmiteshP/nvim-navic",
     requires = "neovim/nvim-lspconfig"
 	}
 	use "neovim/nvim-lspconfig"
 	use "folke/neodev.nvim"
 	use "natebosch/vim-lsc"
 	use "ray-x/lsp_signature.nvim"
-  use "hrsh7th/nvim-cmp"
+	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-path"
 	use "hrsh7th/cmp-buffer"
 	use "hrsh7th/cmp-nvim-lsp"
@@ -36,7 +36,17 @@ return require("packer").startup(function(use)
 	use "lewis6991/gitsigns.nvim"
 
 	use {
-  'nvim-telescope/telescope.nvim', 
-  requires = {{'nvim-lua/plenary.nvim'}}
+  "nvim-telescope/telescope.nvim",
+  requires = {{"nvim-lua/plenary.nvim"}}
 	}
+	use "ThePrimeagen/harpoon"
+	use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
 end)

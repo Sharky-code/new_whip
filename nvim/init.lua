@@ -1,10 +1,10 @@
-vim.cmd[[color tokyonight]]
+--[[
+TODO: Create a window that contains several buffers such as nvimtree, nvimdap and git, similar to neotree
+]]
+
 require("plugin")
 
-require("settings.options")
-require("settings.autocommands")
-require("settings.highlights")
-require("settings.mappings")
+vim.cmd[[color tokyonight]]
 
 require("lsp.lspconfig")
 require("lsp.lspservers")
@@ -21,7 +21,12 @@ require("plugins.toggleterm")
 require("plugins.autopairs")
 require("plugins.git")
 require("plugins.telescope")
+require("plugins.bufferline")
+
+require("settings.highlights")
+require("settings.options")
+require("settings.autocommands")
+require("settings.mappings")
 
 require("ui.winbar")
 require("ui.statusbar")
-vim.cmd[[Gitsigns toggle_signs]]
