@@ -40,13 +40,26 @@ return require("packer").startup(function(use)
   requires = {{"nvim-lua/plenary.nvim"}}
 	}
 	use "ThePrimeagen/harpoon"
-	use {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
-    requires = {
-      "nvim-lua/plenary.nvim",
-      "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-    }
-  }
+	use "simrat39/symbols-outline.nvim"
 end)
+--[[
+-- Use the below for neotree, allowing for a window with three different buffers
+use {
+	"nvim-neo-tree/neo-tree.nvim",
+	branch = "v2.x",
+	requires = {
+		"nvim-lua/plenary.nvim",
+		"kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+		"MunifTanjim/nui.nvim",
+	}
+}
+
+-- use this for competitive programming
+use "xeluxee/competitest.nvim"
+
+-- use this for a sidebar
+use "ldelossa/nvim-ide"
+
+-- use this for a neat sidebar
+use "sidebar-nvim/sidebar.nvim"
+]]
