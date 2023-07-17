@@ -10,6 +10,7 @@ local files = {
 	lsp = {
 		"lspconfig",
 		"lspservers",
+		"lspmappings",
 		"cmp",
 		"dap",
 		"lspsignature"

@@ -41,6 +41,7 @@ return require("packer").startup(function(use)
 	}
 	use "ThePrimeagen/harpoon"
 	use "simrat39/symbols-outline.nvim"
+	use "kdheepak/lazygit.nvim"
 end)
 --[[
 -- Use the below for neotree, allowing for a window with three different buffers
@@ -62,4 +63,7 @@ use "ldelossa/nvim-ide"
 
 -- use this for a neat sidebar
 use "sidebar-nvim/sidebar.nvim"
+
+-- use this for different customisable sidebars
+use "folke/edgy.nvim"
 ]]

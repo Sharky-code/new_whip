@@ -25,6 +25,7 @@ nest.applyKeymaps {
 		{"<Left>", "<C-w>h"},
 		{"<Right>", "<C-w>l"},
 		{"<Leader>g", ":Gitsigns toggle_signs <CR>"},
+		{"<Leader>gg", ":LazyGit <CR>"},
 	},
 
 	{mode = "t",
