@@ -20,7 +20,7 @@ local config = {
 	float = {
 		focusable = true,
 		style = "minimal",
-		border = "rounded",
+		border = "single",  -- rounded
 		source = "always",
 		header = "",
 		prefix = "",
@@ -30,9 +30,16 @@ local config = {
 vim.diagnostic.config(config)
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-	border = "rounded",
+	border = "single",  -- rounded
 })
 
 vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-	border = "rounded",
+	border = "single",  -- rounded
 })
+
+local neodev = require("neodev")
+neodev.setup({
+  library = { plugins = { "nvim-dap-ui" }, types = true },
+  ...
+})
+

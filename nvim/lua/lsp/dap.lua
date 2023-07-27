@@ -1,4 +1,5 @@
-local dap= require("dap")
+local dap = require("dap")
+local dapui = require("dapui")
 local dap_python = require("dap-python")
 
 dap_python.setup("~/.virtualenvs/debugpy/bin/python")
@@ -15,7 +16,8 @@ dap.configurations.cpp = {
 		type = "lldb",
 		request = "launch",
 		program = function()
-			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+			-- return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+			return vim.fn.expand("%:p")
 		end,
 		cwd = "${workspaceFolder}",
 		stopOnEntry = false,
@@ -23,3 +25,4 @@ dap.configurations.cpp = {
 	}
 }
 
+dapui.setup {}

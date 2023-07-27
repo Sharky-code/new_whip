@@ -86,16 +86,16 @@ M.components = {
 		local info = ""
 
 		if count["errors"] ~= 0 then
-			errors = " %#LspDiagnosticsSignError# " .. count["errors"]
+			errors = " %#lspdiagnosticssignerror# " .. count["errors"]
 		end
 		if count["warnings"] ~= 0 then
-			warnings = " %#LspDiagnosticsSignWarning# " .. count["warnings"]
+			warnings = " %#lspdiagnosticssignwarning# " .. count["warnings"]
 		end
 		if count["hints"] ~= 0 then
-			hints = " %#LspDiagnosticsSignHint# " .. count["hints"]
+			hints = " %#lspdiagnosticssignhint# " .. count["hints"]
 		end
 		if count["info"] ~= 0 then
-			info = " %#LspDiagnosticsSignInformation# " .. count["info"]
+			info = " %#lspdiagnosticssigninformation# " .. count["info"]
 		end
 
 		return errors .. warnings .. hints .. info
@@ -116,10 +116,10 @@ function M.statusbar_active()
 		vim.opt_local.statusline = M.statusbar_inactive()
 		return
 	end
-	statusbar_text = statusbar_text .. "%#StatusLine#  " .. M.components.modes_colours() .. M.components.mode() ..
-		"%#StatusLine#" .. "  " .. M.components.file_name() .. "  " ..
-		"%=" ..  "%=%#StatusLine#" ..  "  " .. "%{get(b:,'gitsigns_status','')}" .. M.components.lsp() .. "  " ..
-		M.components.line_info() .. "  " 
+	statusbar_text = statusbar_text .. "%#StatusLineConst#  " .. M.components.modes_colours() .. M.components.mode() ..
+		"  %#StatusLineNC#" .. "  " .. M.components.file_name() .. "  " ..
+		"%=" ..  "%=" ..  "  " .. "%{get(b:,'gitsigns_status','')}" .. M.components.lsp() .. "  " ..
+		"%#StatusLineNC#" .. M.components.line_info() .. "  "
 	return statusbar_text
 end
 
@@ -128,7 +128,7 @@ function M.statusbar_inactive()
 	if vim.tbl_contains({"NvimTree"}, vim.bo.filetype) then
 		return "%#NvimTreeNormal#"
 	end
-	statusbar_text = statusbar_text  .. "%#StatusLineNC#  " .. M.components.file_name()	
+	statusbar_text = statusbar_text  .. "%#StatusLineNC#  " .. M.components.file_name()
 	return statusbar_text
 end
 

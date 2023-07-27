@@ -5,11 +5,13 @@ nest.applyKeymaps {
 	{"<F3>", ":Telescope <CR>"},
 	{"<F4>", ":NvimTreeToggle <CR>"},
 	{"<F5>", ":ToggleTerm <CR>"},
+	{"<F6>", "<cmd>lua require('dapui').toggle() <CR>"},
 
 	{"<Leader>dt", "<cmd>lua require('dap').toggle_breakpoint() <CR>"},
 	{"<Leader>dc", "<cmd>lua require('dap').continue() <CR>"},
-	{"<Leader>dso", "<cmd>lua require('dap').step_over() <CR>"},
-	{"<Leader>dsi", "<cmd>lua require('dap').step_into() <CR>"},
+	{"<Leader>dC", "<cmd>lua require('dap').close() <CR>"},
+	{"<Leader>ds", "<cmd>lua require('dap').step_over() <CR>"},
+	{"<Leader>dS", "<cmd>lua require('dap').step_into() <CR>"},
 	{"<Leader>dr", "<cmd>lua require('dap').repl.open() <CR>"},
 
 	{"<Leader>pn", "<cmd>lua require('dap-python').test_method() <CR>"},

@@ -4,8 +4,6 @@ TODO: Create a window that contains several buffers such as nvimtree, nvimdap an
 
 require("plugin")
 
-vim.cmd[[color tokyonight]]
-
 local files = {
 	lsp = {
 		"lspconfig",
@@ -25,7 +23,8 @@ local files = {
 		"git",
 		"telescope",
 		"bufferline",
-		"symbolsoutline"
+		"symbolsoutline",
+		"whichkey"
 	},
 	settings = {
 		"highlights",
@@ -44,3 +43,5 @@ for k, v in pairs(files) do
 		require(k .. "." .. v[x])
 	end
 end
+
+vim.cmd[[color dracula]]

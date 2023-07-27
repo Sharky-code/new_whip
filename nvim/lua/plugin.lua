@@ -3,7 +3,7 @@ vim.cmd [[packadd packer.nvim]]
 return require("packer").startup(function(use)
 	use "wbthomason/packer.nvim"
 	-- Color Themes
-	use "folke/tokyonight.nvim" 
+	use "Mofiqul/dracula.nvim"
 	-- Plugins
 	use {
 	    "SmiteshP/nvim-navic",
@@ -30,6 +30,7 @@ return require("packer").startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
 	use "mfussenegger/nvim-dap"
 	use "mfussenegger/nvim-dap-python"
+	use "rcarriga/nvim-dap-ui"
 	use "akinsho/toggleterm.nvim"
 	use "windwp/nvim-autopairs"
 	use "dinhhuy258/git.nvim"
@@ -42,6 +43,8 @@ return require("packer").startup(function(use)
 	use "ThePrimeagen/harpoon"
 	use "simrat39/symbols-outline.nvim"
 	use "kdheepak/lazygit.nvim"
+	use "folke/which-key.nvim"
+	use "klen/nvim-test"
 end)
 --[[
 -- Use the below for neotree, allowing for a window with three different buffers
