@@ -11,6 +11,7 @@ local files = {
 		"lspmappings",
 		"cmp",
 		"dap",
+		"dapmappings",
 		"lspsignature"
 	},
 	plugins = {
@@ -24,7 +25,8 @@ local files = {
 		"telescope",
 		"bufferline",
 		"symbolsoutline",
-		"whichkey"
+		"whichkey",
+		"comments"
 	},
 	settings = {
 		"highlights",

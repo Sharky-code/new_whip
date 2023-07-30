@@ -29,5 +29,7 @@ lspconfig.lua_ls.setup {
 		},
 	},
 }
-lspconfig.clangd.setup {}
+lspconfig.clangd.setup {
+
+}
 lspconfig.ltex.setup {}

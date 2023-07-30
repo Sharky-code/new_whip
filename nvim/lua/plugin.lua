@@ -6,8 +6,8 @@ return require("packer").startup(function(use)
 	use "Mofiqul/dracula.nvim"
 	-- Plugins
 	use {
-	    "SmiteshP/nvim-navic",
-    requires = "neovim/nvim-lspconfig"
+		"SmiteshP/nvim-navic",
+		requires = "neovim/nvim-lspconfig"
 	}
 	use "neovim/nvim-lspconfig"
 	use "folke/neodev.nvim"
@@ -27,24 +27,33 @@ return require("packer").startup(function(use)
 	use "nvim-treesitter/nvim-treesitter"
 	use "nvim-tree/nvim-tree.lua"
 	use "LionC/nest.nvim"
-  use "lukas-reineke/indent-blankline.nvim"
+	use "lukas-reineke/indent-blankline.nvim"
+
 	use "mfussenegger/nvim-dap"
 	use "mfussenegger/nvim-dap-python"
+	use "theHamsta/nvim-dap-virtual-text"
 	use "rcarriga/nvim-dap-ui"
+	use "Pocco81/DAPInstall.nvim"
+
 	use "akinsho/toggleterm.nvim"
 	use "windwp/nvim-autopairs"
 	use "dinhhuy258/git.nvim"
 	use "lewis6991/gitsigns.nvim"
 
 	use {
-  "nvim-telescope/telescope.nvim",
-  requires = {{"nvim-lua/plenary.nvim"}}
+		"nvim-telescope/telescope.nvim",
+		requires = { { "nvim-lua/plenary.nvim" } }
 	}
 	use "ThePrimeagen/harpoon"
 	use "simrat39/symbols-outline.nvim"
 	use "kdheepak/lazygit.nvim"
 	use "folke/which-key.nvim"
-	use "klen/nvim-test"
+	use "mg979/vim-visual-multi"
+	use "williamboman/mason.nvim"
+	use "terrortylor/nvim-comment"
+
+	use "jose-elias-alvarez/null-ls.nvim"
+	use "klen/nvim-test" -- remember to implement this lmao
 end)
 --[[
 -- Use the below for neotree, allowing for a window with three different buffers

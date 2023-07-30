@@ -38,8 +38,10 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 })
 
 local neodev = require("neodev")
-neodev.setup({
+neodev.setup {
   library = { plugins = { "nvim-dap-ui" }, types = true },
-  ...
-})
+}
+
+local mason = require("mason")
+mason.setup {}
 

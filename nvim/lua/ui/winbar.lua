@@ -31,11 +31,11 @@ end
 
 function M.set_winbar()
 	local path = vim.fn.expand("%:p")
+	end
 	if path == "" or vim.tbl_contains(winbar_filetype_exclude, vim.bo.filetype) then
 		vim.opt_local.winbar = nil
 		return
 	end
 	vim.opt_local.winbar = "%{%v:lua.require('ui.winbar').get_winbar()%}"
-end
 
 return M

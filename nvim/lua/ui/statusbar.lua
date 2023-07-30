@@ -13,6 +13,9 @@ local statusbar_filetype_exclude = {
   "Outline",
   "spectre_panel",
   "toggleterm",
+	"dapui",
+	"dapui*",
+	"dap-repl"
 }
 
 M.components = {
@@ -116,10 +119,15 @@ function M.statusbar_active()
 		vim.opt_local.statusline = M.statusbar_inactive()
 		return
 	end
+	if vim.tbl_contains({"dapui_watches", "dapui_stacks", "dapui_breakpoints"}, vim.bo.filetype) then
+		return "%#WinSeparator#" .. string.rep("─", vim.fn.winwidth(0))
+	elseif vim.tbl_contains({"dapui_scopes", "dapui_console", "dap-repl"}, vim.bo.filetype) then
+		return "%#WinSeparator#"
+	end
 	statusbar_text = statusbar_text .. "%#StatusLineConst#  " .. M.components.modes_colours() .. M.components.mode() ..
-		"  %#StatusLineNC#" .. "  " .. M.components.file_name() .. "  " ..
+		"  %#StatusLineNCConst#" .. "  " .. M.components.file_name() .. "  " ..
 		"%=" ..  "%=" ..  "  " .. "%{get(b:,'gitsigns_status','')}" .. M.components.lsp() .. "  " ..
-		"%#StatusLineNC#" .. M.components.line_info() .. "  "
+		"%#StatusLineNCConst#" .. M.components.line_info() .. "  "
 	return statusbar_text
 end
 
@@ -128,7 +136,14 @@ function M.statusbar_inactive()
 	if vim.tbl_contains({"NvimTree"}, vim.bo.filetype) then
 		return "%#NvimTreeNormal#"
 	end
-	statusbar_text = statusbar_text  .. "%#StatusLineNC#  " .. M.components.file_name()
+	if vim.tbl_contains({"dapui_watches", "dapui_stacks", "dapui_breakpoints"}, vim.bo.filetype) then
+		vim.opt_local.winbar = vim.bo.filetype
+		return "%#WinSeparator#" .. string.rep("─", vim.fn.winwidth(0))
+	elseif vim.tbl_contains({"dapui_scopes", "dapui_console", "dap-repl"}, vim.bo.filetype) then
+		vim.opt_local.winbar = vim.bo.filetype
+		return "%#WinSeparator#"
+	end
+	statusbar_text = statusbar_text  .. "%#StatusLineNCConst#  " .. M.components.file_name()
 	return statusbar_text
 end
 
