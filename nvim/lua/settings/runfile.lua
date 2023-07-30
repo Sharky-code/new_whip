@@ -29,7 +29,8 @@ M.runfile = function(input1, input2)
 		vim.cmd(string.format(":TermExec cmd=';python3 %s'", input1))
 	elseif vim.bo.filetype == "cpp" then
 		local file_exec = split(input1, ".")
-		vim.cmd(string.format(":TermExec cmd=';g++ -std=c++20 -o %s %s ; ./%s'", file_exec[#file_exec - 1], input2, file_exec[#file_exec - 1]))
+		local arg = vim.fn.input("Input arguments: ")
+		vim.cmd(string.format(":TermExec cmd=';g++ -std=c++20 -o %s %s %s; ./%s'", file_exec[#file_exec - 1], input2, arg, file_exec[#file_exec - 1]))
 		elseif vim.bo.filetype == "lua" then
 		vim.cmd(string.format(":TermExec cmd='lua %s'", input1))
 	else

@@ -5,9 +5,19 @@ local dap_virtual = require("nvim-dap-virtual-text")
 
 dap_python.setup("~/.virtualenvs/debugpy/bin/python")
 
+
+table.insert(require("dap").configurations.python, {
+    type = "python",
+    request = "launch",
+    name = "Module",
+    console = "integratedTerminal",
+    module = "src", -- edit this to be your app's main module
+    cwd = "${workspaceFolder}",
+})
+
 dap.adapters.lldb = {
 	type = "executable",
-	command = "~/local/codelldb-1.9.2/adapter",
+	command = "/usr/bin/lldb",
 	name = "lldb",
 }
 
