@@ -52,7 +52,29 @@ dap.listeners.before.event_exited["dapui_config"] = function()
 end
 
 dapui.setup {
-
+	layouts = { {
+		elements = { {
+			id = "scopes",
+			size = 0.14
+		}, {
+			id = "breakpoints",
+			size = 0.14
+		}, {
+			id = "stacks",
+			size = 0.14
+		}, {
+			id = "watches",
+			size = 0.14
+		}, {
+			id = "repl",
+			size = 0.14
+		}, {
+			id = "console",
+			size = 0.14
+		} },
+	position = "left",
+	size = 40
+} }
 }
 dap_virtual.setup {}
 

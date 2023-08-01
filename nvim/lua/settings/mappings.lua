@@ -5,7 +5,7 @@ nest.applyKeymaps {
 	{"<F3>", ":Telescope <CR>"},
 	{"<F4>", ":NvimTreeToggle <CR>"},
 	{"<F5>", ":ToggleTerm <CR>"},
-	{"<F6>", "<cmd>lua require('dapui').toggle() <CR>"},
+	{"<F6>", "<cmd>lua vim.cmd('NvimTreeClose'); require('dapui').toggle() <CR>"},
 
 	{"<Leader>pn", "<cmd>lua require('dap-python').test_method() <CR>"},
 	{"<Leader>pf", "<cmd>lua require('dap-python').test_class() <CR>"},
@@ -24,10 +24,6 @@ nest.applyKeymaps {
 	},
 
 	{mode = "t",
-		{"<C-K>", "<C-c><C-\\><C-n><C-w>k"},
-		{"<Esc>", "<C-c><C-\\><C-n><C-w>k"},
-		{"<C-J>", "<C-c><C-\\><C-n><C-w>j"},
-		{"<C-H>", "<C-c><C-\\><C-n><C-w>h"},
-		{"<C-L>", "<C-c><C-\\><C-n><C-w>l"},
+		{"<Esc>", "<C-\\><C-n>:ToggleTerm <CR>"},
 	},
 }

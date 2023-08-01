@@ -51,6 +51,7 @@ return require("packer").startup(function(use)
 	use "mg979/vim-visual-multi"
 	use "williamboman/mason.nvim"
 	use "terrortylor/nvim-comment"
+	use "williamboman/mason.nvim"
 
 	use "jose-elias-alvarez/null-ls.nvim"
 	use "klen/nvim-test" -- remember to implement this lmao

@@ -47,19 +47,19 @@ function M.set_highlights()
 	})
 	vim.api.nvim_set_hl(0, "lspdiagnosticssignerror", {
 		fg = "#FF0000",
-		bg = vim.api.nvim_get_hl_by_name("StatusLineNCConst", true).background
+		bg = vim.api.nvim_get_hl_by_name("StatusLineConst", true).background
 	})
 	vim.api.nvim_set_hl(0, "lspdiagnosticssignwarning", {
 		fg = "#FFFF00",
-		bg = vim.api.nvim_get_hl_by_name("StatusLineNCConst", true).background
+		bg = vim.api.nvim_get_hl_by_name("StatusLineConst", true).background
 	})
 	vim.api.nvim_set_hl(0, "lspdiagnosticssignhint", {
 		fg = "#00FFFF",
-		bg = vim.api.nvim_get_hl_by_name("StatusLineNCConst", true).background
+		bg = vim.api.nvim_get_hl_by_name("StatusLineConst", true).background
 	})
 	vim.api.nvim_set_hl(0, "lspdiagnosticssigninformation", {
 		fg = "#00FF00",
-		bg = vim.api.nvim_get_hl_by_name("StatusLineNCConst", true).background
+		bg = vim.api.nvim_get_hl_by_name("StatusLineConst", true).background
 	})
 	vim.cmd[[
 		hi NvimTreeWinSeparator guibg=bg guifg=bg
