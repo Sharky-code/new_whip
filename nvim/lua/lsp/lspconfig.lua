@@ -5,6 +5,11 @@ local signs = {
 	{ name = "DiagnosticSignInfo", text = "●" },
 }
 
+local neodev = require("neodev")
+local null_ls = require("null-ls")
+local mason = require("mason")
+local mason_lspconfig = require("mason-lspconfig")
+
 for _, sign in ipairs(signs) do
 	vim.fn.sign_define(sign.name, { texthl = sign.name, text = sign.text, numhl = "" })
 end
@@ -37,11 +42,13 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 	border = "single",  -- rounded
 })
 
-local neodev = require("neodev")
-neodev.setup {
-  library = { plugins = { "nvim-dap-ui" }, types = true },
-}
+neodev.setup { library = { plugins = { "nvim-dap-ui" }, types = true }, }
 
-local mason = require("mason")
 mason.setup {}
 
+null_ls.setup({
+    sources = {
+        null_ls.builtins.formatting.black,
+        null_ls.builtins.formatting.blue,
+    },
+})

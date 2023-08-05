@@ -2,7 +2,9 @@ vim.cmd [[packadd packer.nvim]]
 
 return require("packer").startup(function(use)
 	use "wbthomason/packer.nvim"
+	-- Packer:
 	-- Color Themes
+	use "Mofiqul/vscode.nvim"
 	use "Mofiqul/dracula.nvim"
 	-- Plugins
 	use {
@@ -49,11 +51,26 @@ return require("packer").startup(function(use)
 	use "kdheepak/lazygit.nvim"
 	use "folke/which-key.nvim"
 	use "mg979/vim-visual-multi"
-	use "williamboman/mason.nvim"
+	use "williamboman/mason-lspconfig.nvim"
 	use "terrortylor/nvim-comment"
 	use "williamboman/mason.nvim"
-
 	use "jose-elias-alvarez/null-ls.nvim"
+	use {
+	  'VonHeikemen/lsp-zero.nvim',
+	  branch = 'v2.x',
+	  requires = {
+		-- LSP Support
+		{'neovim/nvim-lspconfig'},             -- Required
+		{'williamboman/mason.nvim'},           -- Optional
+		{'williamboman/mason-lspconfig.nvim'}, -- Optional
+
+		-- Autocompletion
+		{'hrsh7th/nvim-cmp'},     -- Required
+		{'hrsh7th/cmp-nvim-lsp'}, -- Required
+		{'L3MON4D3/LuaSnip'},     -- Required
+	  }
+	}
+
 	use "klen/nvim-test" -- remember to implement this lmao
 end)
 --[[

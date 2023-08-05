@@ -1,5 +1,4 @@
 local lspconfig = require("lspconfig")
-local navic = require("nvim-navic")
 
 lspconfig.pyright.setup {
 	settings = {
@@ -30,6 +29,9 @@ lspconfig.lua_ls.setup {
 	},
 }
 lspconfig.clangd.setup {
-
+	cmd = {
+		"clangd",
+		"--offset-encoding=utf-16"
+	}
 }
 lspconfig.ltex.setup {}
