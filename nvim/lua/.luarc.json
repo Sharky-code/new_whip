@@ -1,9 +1,5 @@
 {
-    "workspace.library": [
-        "/Users/penguiny/.local/share/nvim/site/pack/packer/start/neodev.nvim/types/stable",
-        "/opt/homebrew/Cellar/neovim/0.9.1/share/nvim/runtime/lua",
-        "/Users/penguiny/.local/share/nvim/site/pack/packer/start/nvim-dap-ui/lua",
-        "/Users/penguiny/.config/nvim/lua",
-        "${3rd}/luv/library"
+    "diagnostics.disable": [
+        "deprecated"
     ]
 }

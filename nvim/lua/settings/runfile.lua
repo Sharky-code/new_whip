@@ -1,42 +1,16 @@
 local M = {}
 
-local split = function (inputstr, sep)
-  if sep == nil then
-          sep = "%s"
-  end
-  local t={}
-  for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
-          table.insert(t, str)
-  end
-  return t
-end
+M.main = function()
+	local ft = vim.bo.filetype
+	local opts = "-mode=term -pos=bottom -rows=10 -raw -save=1"
 
-M.runfile = function(input1, input2)
-	-- TODO: try and do this with an for loop. im not good with lua :(
-	input1 = string.gsub(input1, "\\\\", "\\\\\\\\")
-	input1 = string.gsub(input1, " ", "\\\\ ")
-	input1 = string.gsub(input1, "%(", "\\\\%(")
-	input1 = string.gsub(input1, "%)", "\\\\%)")
-
-	input2 = string.gsub(input2, "\\\\", "\\\\\\\\")
-	input2 = string.gsub(input2, " ", "\\\\ ")
-	input2 = string.gsub(input2, "%(", "\\\\%(")
-	input2 = string.gsub(input2, "%)", "\\\\%)")
-
-	vim.cmd(':w')
-
-	if vim.bo.filetype == "python" then
-		vim.cmd(string.format(":TermExec cmd=';python3 %s'", input1))
-	elseif vim.bo.filetype == "cpp" then
-		local file_exec = split(input1, ".")
-		local arg = vim.fn.input("Input arguments: ")
-		vim.cmd(string.format(":TermExec cmd=';g++ -std=c++20 -o %s %s %s; ./%s'", file_exec[#file_exec - 1], input2, arg, file_exec[#file_exec - 1]))
-		elseif vim.bo.filetype == "lua" then
-		vim.cmd(string.format(":TermExec cmd='lua %s'", input1))
-	else
-		print("your file cannot be run with this plugin")
+	if ft == "python" then
+		vim.cmd(":AsyncRun " .. opts .. " /usr/bin/python3 '$(VIM_FILEPATH)'")
+	elseif ft == "cpp" then
+		vim.cmd(":AsyncRun " .. opts .. " g++ -std=c++20 '$(VIM_FILEPATH)' -o '$(VIM_PATHNOEXT)'; ./'$(VIM_FILENOEXT)'")
+	elseif ft == "rust" then
+		vim.cmd(":AsyncRun " .. opts .. " rustc '$(VIM_FILEPATH)'; ./'$(VIM_FILENOEXT)'")
 	end
-
 end
 
 return M

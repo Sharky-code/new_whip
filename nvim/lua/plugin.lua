@@ -1,99 +1,248 @@
-vim.cmd [[packadd packer.nvim]]
+-- PLUGIN.LUA
+
+-- for more plugins, take this as reference:
+-- https://github.com/rockerBOO/awesome-neovim#lsp
+
+-- Set up plugins using packer.nvim
+vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
-	use "wbthomason/packer.nvim"
-	-- Packer:
-	-- Color Themes
-	use "Mofiqul/vscode.nvim"
-	use "Mofiqul/dracula.nvim"
-	-- Plugins
-	use {
-		"SmiteshP/nvim-navic",
-		requires = "neovim/nvim-lspconfig"
-	}
-	use "neovim/nvim-lspconfig"
-	use "folke/neodev.nvim"
-	use "natebosch/vim-lsc"
-	use "ray-x/lsp_signature.nvim"
-	use "hrsh7th/nvim-cmp"
-	use "hrsh7th/cmp-path"
-	use "hrsh7th/cmp-buffer"
-	use "hrsh7th/cmp-nvim-lsp"
-	use "L3MON4D3/LuaSnip"
+	use("wbthomason/packer.nvim")
 
-	use {
-		"akinsho/bufferline.nvim",
+	-- ColorSchemes
+	use("rose-pine/neovim")
+	use("Mofiqul/dracula.nvim")
+
+	-- Lsp
+	use("neovim/nvim-lspconfig")
+	use("williamboman/mason.nvim")
+	use("jose-elias-alvarez/null-ls.nvim")
+	use("nvim-lua/plenary.nvim")
+	use("folke/neodev.nvim")
+	use("ray-x/lsp_signature.nvim")
+	use("nvim-lua/lsp-status.nvim")
+	use("onsails/lspkind.nvim")
+	use({
+		"nvimdev/lspsaga.nvim",
+		after = "nvim-lspconfig",
+		config = function()
+			require("lspsaga").setup({
+				symbol_in_winbar = {
+					enable = false,
+				},
+			})
+		end,
+	})
+	use({
+		"kosayoda/nvim-lightbulb",
+		config = function()
+			require("nvim-lightbulb").setup({
+				autocmd = { enabled = true },
+				virtual_text = {
+					enabled = false,
+				},
+			})
+		end,
+	})
+	use({ "RishabhRD/nvim-lsputils", requires = { "RishabhRD/popfix" } })
+	use({
+		"j-hui/fidget.nvim",
+		tag = "legacy",
+		config = function()
+			require("fidget").setup({})
+		end,
+	})
+	use({
+		"ray-x/navigator.lua",
+		requires = {
+			{ "ray-x/guihua.lua",     run = "cd lua/fzy && make" },
+			{ "neovim/nvim-lspconfig" },
+		},
+		config = function()
+			require("navigator").setup({
+				lsp = {
+					format_on_save = false,
+					diagnostic = {
+						underline = true,
+						virtual_text = false,
+						update_in_insert = false,
+					},
+					document_highlight = false,
+					display_diagnostic_qf = false,
+				},
+			})
+		end,
+	})
+
+	-- Dropbar
+	use({
+		"Bekaboo/dropbar.nvim",
+		config = function()
+			require("dropbar").setup({
+				icons = {
+					ui = {
+						bar = {
+							separator = "  ",
+						},
+					},
+				},
+			})
+		end,
+	})
+
+	-- Autocomplete and Snippets
+	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-cmdline")
+	use("hrsh7th/nvim-cmp")
+	use("saadparwaiz1/cmp_luasnip")
+
+	use("L3MON4D3/LuaSnip")
+	use("rafamadriz/friendly-snippets")
+	use("michaelb/sniprun")
+
+	-- DAP and neotest
+	use("mfussenegger/nvim-dap")
+	use("mfussenegger/nvim-dap-python")
+	use("theHamsta/nvim-dap-virtual-text")
+	use("rcarriga/nvim-dap-ui")
+	use("Pocco81/DAPInstall.nvim")
+	use("klen/nvim-test")
+	use("nvim-neotest/neotest")
+	use("nvim-neotest/neotest-python")
+
+	-- Python virtual environment
+	use("AckslD/swenv.nvim")
+	use("stevearc/dressing.nvim")
+
+	-- Which Key
+	use("folke/which-key.nvim")
+
+	-- Autoclose (bracket and auto indent)
+	use({
+		"m4xshen/autoclose.nvim",
+		config = function()
+			require("autoclose").setup({})
+		end,
+	})
+	use({
+		"kylechui/nvim-surround",
 		tag = "*",
-		requires = "nvim-tree/nvim-web-devicons"
-	}
-	use "nvim-treesitter/nvim-treesitter"
-	use "nvim-tree/nvim-tree.lua"
-	use "LionC/nest.nvim"
-	use "lukas-reineke/indent-blankline.nvim"
+		config = function()
+			require("nvim-surround").setup({})
+		end
+	})
 
-	use "mfussenegger/nvim-dap"
-	use "mfussenegger/nvim-dap-python"
-	use "theHamsta/nvim-dap-virtual-text"
-	use "rcarriga/nvim-dap-ui"
-	use "Pocco81/DAPInstall.nvim"
+	-- Terminal
+	use({
+		"akinsho/toggleterm.nvim",
+		tag = "*",
+		config = function()
+			require("toggleterm").setup({
+				size = 20,
+				direction = "horizontal",
+				winbar = {
+					enabled = true,
+				},
+			})
+		end,
+	})
 
-	use "akinsho/toggleterm.nvim"
-	use "windwp/nvim-autopairs"
-	use "dinhhuy258/git.nvim"
-	use "lewis6991/gitsigns.nvim"
+	-- Async Run
+	use("skywind3000/asyncrun.vim")
 
-	use {
-		"nvim-telescope/telescope.nvim",
-		requires = { { "nvim-lua/plenary.nvim" } }
-	}
-	use "ThePrimeagen/harpoon"
-	use "simrat39/symbols-outline.nvim"
-	use "kdheepak/lazygit.nvim"
-	use "folke/which-key.nvim"
-	use "mg979/vim-visual-multi"
-	use "williamboman/mason-lspconfig.nvim"
-	use "terrortylor/nvim-comment"
-	use "williamboman/mason.nvim"
-	use "jose-elias-alvarez/null-ls.nvim"
-	use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v2.x',
-	  requires = {
-		-- LSP Support
-		{'neovim/nvim-lspconfig'},             -- Required
-		{'williamboman/mason.nvim'},           -- Optional
-		{'williamboman/mason-lspconfig.nvim'}, -- Optional
+	-- Tmux with neovim
+	use({
+		"aserowy/tmux.nvim",
+		config = function()
+			return require("tmux").setup()
+		end,
+	})
 
-		-- Autocompletion
-		{'hrsh7th/nvim-cmp'},     -- Required
-		{'hrsh7th/cmp-nvim-lsp'}, -- Required
-		{'L3MON4D3/LuaSnip'},     -- Required
-	  }
-	}
+	-- Ui
+	use("MunifTanjim/nui.nvim")
+	use("SmiteshP/nvim-navic")
+	use({
+		"simrat39/symbols-outline.nvim",
+		config = function()
+			require("symbols-outline").setup({})
+		end,
+	})
 
-	use "klen/nvim-test" -- remember to implement this lmao
+	-- Telescope
+	use("nvim-telescope/telescope.nvim")
+
+	-- Easier Commenting
+	use("numToStr/Comment.nvim")
+
+	-- NvimTree
+	use("nvim-tree/nvim-tree.lua")
+
+	-- Lualine
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+	})
+
+	-- Legendary
+	use({ "mrjones2014/legendary.nvim", config = function() end })
+
+	-- Treesitter
+	use("nvim-treesitter/nvim-treesitter")
+	use({
+		"ThePrimeagen/refactoring.nvim",
+		requires = {
+			{ "nvim-lua/plenary.nvim" },
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+		config = function()
+			require("refactoring").setup()
+		end,
+	})
+	use({
+		"Badhi/nvim-treesitter-cpp-tools",
+		config = function()
+			require("nt-cpp-tools").setup({})
+		end,
+	})
+
+	-- Multiple cursors
+	use("mg979/vim-visual-multi")
+
 end)
+
+-- Unused
+
+-- Will be implemented
+
 --[[
--- Use the below for neotree, allowing for a window with three different buffers
-use {
-	"nvim-neo-tree/neo-tree.nvim",
-	branch = "v2.x",
-	requires = {
-		"nvim-lua/plenary.nvim",
-		"kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
-		"MunifTanjim/nui.nvim",
-	}
-}
+use({
+	"rmagatti/goto-preview",
+	config = function()
+		require("goto-preview").setup({ default_mappings = true })
+	end,
+})
+use({
+	"SmiteshP/nvim-navbuddy",
+	config = function()
+		require("nvim-navbuddy").setup({})
+	end,
+})
 
--- use this for competitive programming
-use "xeluxee/competitest.nvim"
+-- Grapple for file travel
+use({
+	"cbochs/grapple.nvim",
+	requires = { "nvim-lua/plenary.nvim" },
+})
 
--- use this for a sidebar
-use "ldelossa/nvim-ide"
+-- use Glance for a navigator ui replacement
+use({
+	"dnlhc/glance.nvim",
+	config = function()
+		require('glance').setup({})
+	end,
+})
 
--- use this for a neat sidebar
-use "sidebar-nvim/sidebar.nvim"
-
--- use this for different customisable sidebars
-use "folke/edgy.nvim"
+use("mhartington/formatter.nvim")
 ]]

@@ -1,49 +1,19 @@
---[[
-TODO: Create a window that contains several buffers such as nvimtree, nvimdap and git, similar to neotree
-]]
-
 require("plugin")
+vim.cmd(":colo rose-pine")
 
-local files = {
-	lsp = {
-		"lspconfig",
-		"lspservers",
-		"lspmappings",
-		"cmp",
-		"dap",
-		"dapmappings",
-		"lspsignature"
-	},
-	plugins = {
-		"navic",
-		"nvimtree",
-		"treesitter",
-		"indentblankline",
-		"toggleterm",
-		"autopairs",
-		"git",
-		"telescope",
-		"bufferline",
-		"symbolsoutline",
-		"whichkey",
-		"comments"
-	},
-	settings = {
-		"highlights",
-		"options",
-		"autocommands",
-		"mappings"
-	},
-	ui = {
-		"winbar",
-		"statusbar"
-	}
-}
+require("lsp.luasnips")
+require("lsp.lspserver")
+require("lsp.cmp")
+require("lsp.lspconfig")
+require("lsp.lsputils")
 
-for k, v in pairs(files) do
-	for x = 1, #v do
-		require(k .. "." .. v[x])
-	end
-end
+require("plugins.dap")
+require("plugins.neotest")
+require("plugins.nvim_tree")
+require("plugins.treesitter")
+require("plugins.statusline")
 
-vim.cmd[[color dracula]]
+require("settings.options")
+require("settings.mappings")
+require("settings.commands")
+require("settings.autocommands")
