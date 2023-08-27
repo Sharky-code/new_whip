@@ -1,11 +1,11 @@
 # Dotfiles
---- 
 
 This dotfile is an updated version of the old one with improved, cleaner code
+The purpose of this repository of for me to easily rebuild my computer into a coding beast every time I set up my computer
 
 ## Applications that i use
 
-### Code Editors
+### Code Editors that i use
 - [Zed](https://zed.dev/)
 - [Neovim](https://neovim.io/)
 - [VsCode](https://code.visualstudio.com)
