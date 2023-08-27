@@ -16,3 +16,12 @@ The purpose of this repository of for me to easily rebuild my computer into a co
 - [Lapce](https://lapce.dev)
 - [Spyder](https://www.spyder-ide.org/)
 - [Pulsar](https://pulsar-edit.dev/)
+- [Visual Studio (MAC)](https://visualstudio.microsoft.com/vs/mac/)
+- [Visual Studio (WINDOW)](https://visualstudio.microsoft.com/downloads/)
+- [Helix](https://helix-editor.com/)
+- [Space Macs](https://www.spacemacs.org/#)
+- [Kakoune](http://kakoune.org/)
+- [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+- [Code::Blocks (WINDOW)](https://www.codeblocks.org/)
+
+
