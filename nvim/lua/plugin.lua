@@ -135,6 +135,7 @@ return require("packer").startup(function(use)
 	})
 
 	-- Terminal
+	--[[
 	use({
 		"akinsho/toggleterm.nvim",
 		tag = "*",
@@ -145,9 +146,14 @@ return require("packer").startup(function(use)
 				winbar = {
 					enabled = true,
 				},
+				terminal_mappings = true,
+				insert_mappings = true
 			})
 		end,
 	})
+	]]
+	use ({'voldikss/vim-floaterm'})
+
 
 	-- Async Run
 	use("skywind3000/asyncrun.vim")
