@@ -1,0 +1,11 @@
+background_image ~/.config/kitty/re-zero-emilia.png
+background_image_layout cscaled
+background_opacity 1.0
+background_tint 0.6
+
+font_family JetBrains Mono NL Bold
+
+# BEGIN_KITTY_THEME
+# Cobalt Neon
+include current-theme.conf
+# END_KITTY_THEME
