@@ -3,6 +3,9 @@
 This dotfile is an updated version of the old one with improved, cleaner code
 The purpose of this repository of for me to easily rebuild my computer into a coding beast every time I set up my computer
 
+## New Project
+Emili - vim, my new personal project, is undergoing development. Check it out in the nvim folder 
+
 ## Applications that i use
 
 ### Code Editors that i use
