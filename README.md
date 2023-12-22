@@ -1,7 +1,9 @@
-# Dotfiles
+#Dotfiles
 
 This dotfile is an updated version of the old one with improved, cleaner code
 The purpose of this repository of for me to easily rebuild my computer into a coding beast every time I set up my computer
+
+# MAC AND ARCH LINUX SHOULD BE BOTH SUPPORTED BUT THERE MAY BE SOME BUGS
 
 ## Applications that i use
 
