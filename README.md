@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 #Dotfiles
+=======
+# Dotfiles
+>>>>>>> origin/master
 
 This dotfile is an updated version of the old one with improved, cleaner code
 The purpose of this repository of for me to easily rebuild my computer into a coding beast every time I set up my computer
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # MAC AND ARCH LINUX SHOULD BE BOTH SUPPORTED BUT THERE MAY BE SOME BUGS
 =======
@@ -10,6 +15,8 @@ The purpose of this repository of for me to easily rebuild my computer into a co
 Emili - vim, my new personal project, is undergoing development. Check it out in the nvim folder 
 >>>>>>> adbd94a45816ef3dee5c064292554e29caeaa734
 
+=======
+>>>>>>> origin/master
 ## Applications that i use
 
 ### Code Editors that i use
