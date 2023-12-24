@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>~/.config/nvim/init.lua.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim9.0_v1">
+<meta name="syntax" content="none">
+<meta name="settings" content="number_lines,use_css,no_foldcolumn,expand_tabs,line_ids,pre_wrap,prevent_copy=,use_input_for_pc=fallback">
+<meta name="colorscheme" content="tokyonight">
+<style>
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #c0caf5; background-color: #000000; }
+body { font-family: monospace; color: #c0caf5; background-color: #000000; }
+* { font-size: 1em; }
+.LineNr { color: #3b4261; }
+-->
+</style>
+
+<script>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr">  1 </span>--[[
+<span id="L2" class="LineNr">  2 </span>-- EMILIVIM --
+<span id="L3" class="LineNr">  3 </span>
+<span id="L4" class="LineNr">  4 </span>What is the purpose of this?
+<span id="L5" class="LineNr">  5 </span>This is the possibly the fifth time you have tried to rewrite Neovim. Isn't 4 Enough?
+<span id="L6" class="LineNr">  6 </span>The purpose of this is to delve even deeper into the Neovim rabbit hole.
+<span id="L7" class="LineNr">  7 </span>
+<span id="L8" class="LineNr">  8 </span>Last time wasn't good enough - you copied code and used the first result from Google, albeit you did credit.
+<span id="L9" class="LineNr">  9 </span>
+<span id="L10" class="LineNr"> 10 </span>This time you read from the documentation. Certain code can be spared from this strict rule; options will be
+<span id="L11" class="LineNr"> 11 </span>copied from last time as it is a refined taste.
+<span id="L12" class="LineNr"> 12 </span>
+<span id="L13" class="LineNr"> 13 </span>The structure of the files this time would be simplistic, and instead of many files, there would be few, structured
+<span id="L14" class="LineNr"> 14 </span>with comments such as these - structural integrity of each individual files is preferred
+<span id="L15" class="LineNr"> 15 </span>due to easy accessibilty of the different regions of code.
+<span id="L16" class="LineNr"> 16 </span>
+<span id="L17" class="LineNr"> 17 </span>I want to give the text editor a largely simplified and furnished feel, and instead of the typical over-
+<span id="L18" class="LineNr"> 18 </span>reliance on plugins, I will use largely the built in Nvim features - because typically, you only just need
+<span id="L19" class="LineNr"> 19 </span>a terminal to be effective
+<span id="L20" class="LineNr"> 20 </span>]]
+<span id="L21" class="LineNr"> 21 </span>
+<span id="L22" class="LineNr"> 22 </span>
+<span id="L23" class="LineNr"> 23 </span>-- The ToDo list is on my Notion
+<span id="L24" class="LineNr"> 24 </span>
+<span id="L25" class="LineNr"> 25 </span>--[[
+<span id="L26" class="LineNr"> 26 </span>-- DEPENDENCIES --
+<span id="L27" class="LineNr"> 27 </span>1. npm
+<span id="L28" class="LineNr"> 28 </span>2. neovim (ofc)
+<span id="L29" class="LineNr"> 29 </span>]]
+<span id="L30" class="LineNr"> 30 </span>
+<span id="L31" class="LineNr"> 31 </span>--[[
+<span id="L32" class="LineNr"> 32 </span>-- CODING LANGUAGES I USE (LSPs I will install) --
+<span id="L33" class="LineNr"> 33 </span>1. Python -&gt; pyright
+<span id="L34" class="LineNr"> 34 </span>2. C++ -&gt; clangd
+<span id="L35" class="LineNr"> 35 </span>3. Lua (Neovim) -&gt; lua-language-server
+<span id="L36" class="LineNr"> 36 </span>4. Rust
+<span id="L37" class="LineNr"> 37 </span>5. Vim
+<span id="L38" class="LineNr"> 38 </span>6. Cmake
+<span id="L39" class="LineNr"> 39 </span>]]
+<span id="L40" class="LineNr"> 40 </span>
+<span id="L41" class="LineNr"> 41 </span>--[[
+<span id="L42" class="LineNr"> 42 </span>-- INDEX --
+<span id="L43" class="LineNr"> 43 </span>1. Lazy #001000
+<span id="L44" class="LineNr"> 44 </span>    a. Lazy Setup #001010
+<span id="L45" class="LineNr"> 45 </span>    b. Plugin List #001020
+<span id="L46" class="LineNr"> 46 </span>    c. Lazy Options #001030
+<span id="L47" class="LineNr"> 47 </span>    d. .Setup() #001040
+<span id="L48" class="LineNr"> 48 </span>        i. Colorscheme #001021
+<span id="L49" class="LineNr"> 49 </span>        ii. Treesitter #001022
+<span id="L50" class="LineNr"> 50 </span>        iii. Lsp #001023
+<span id="L51" class="LineNr"> 51 </span>        iv. Autocomplete and Snippets #001024
+<span id="L52" class="LineNr"> 52 </span>        v. Aesthetics #001025
+<span id="L53" class="LineNr"> 53 </span>        vi. Dropbar #001026
+<span id="L54" class="LineNr"> 54 </span>        vii. Float Terminal #001027
+<span id="L55" class="LineNr"> 55 </span>        viii. Asyncrun #001028
+<span id="L56" class="LineNr"> 56 </span>        ix. Telescope #001029
+<span id="L57" class="LineNr"> 57 </span>        x. True Zen #00102a
+<span id="L58" class="LineNr"> 58 </span>        xi. Miscellaneous #00102b
+<span id="L59" class="LineNr"> 59 </span>2. Treesitter setup #002000
+<span id="L60" class="LineNr"> 60 </span>3. Miscellaneous #003000
+<span id="L61" class="LineNr"> 61 </span>    a. Transparent Background Plugin #003010
+<span id="L62" class="LineNr"> 62 </span>    b. True Zen #003020
+<span id="L63" class="LineNr"> 63 </span>    c. Telescope .Setup() #003030
+<span id="L64" class="LineNr"> 64 </span>4. Runtime Commands #00400
+<span id="L65" class="LineNr"> 65 </span>]]
+<span id="L66" class="LineNr"> 66 </span>
+<span id="L67" class="LineNr"> 67 </span>-- 1. _L. A. Z. Y._ -- #001000
+<span id="L68" class="LineNr"> 68 </span>
+<span id="L69" class="LineNr"> 69 </span>-- Lazy Setup (Copy and Paste from the website) -- #001010
+<span id="L70" class="LineNr"> 70 </span>local lazypath = vim.fn.stdpath(&quot;data&quot;) .. &quot;/lazy/lazy.nvim&quot;
+<span id="L71" class="LineNr"> 71 </span>if not vim.loop.fs_stat(lazypath) then
+<span id="L72" class="LineNr"> 72 </span>    vim.fn.system({
+<span id="L73" class="LineNr"> 73 </span>        &quot;git&quot;,
+<span id="L74" class="LineNr"> 74 </span>        &quot;clone&quot;,
+<span id="L75" class="LineNr"> 75 </span>        &quot;--filter=blob:none&quot;,
+<span id="L76" class="LineNr"> 76 </span>        &quot;<a href="https://github.com/folke/lazy.nvim.git">https://github.com/folke/lazy.nvim.git</a>&quot;,
+<span id="L77" class="LineNr"> 77 </span>        &quot;--branch=stable&quot;, -- latest stable release
+<span id="L78" class="LineNr"> 78 </span>        lazypath,
+<span id="L79" class="LineNr"> 79 </span>    })
+<span id="L80" class="LineNr"> 80 </span>end
+<span id="L81" class="LineNr"> 81 </span>vim.opt.rtp:prepend(lazypath)
+<span id="L82" class="LineNr"> 82 </span>
+<span id="L83" class="LineNr"> 83 </span>-- Plugin List -- #001020
+<span id="L84" class="LineNr"> 84 </span>local plugins = {
+<span id="L85" class="LineNr"> 85 </span>    -- &gt; Colorscheme #001021
+<span id="L86" class="LineNr"> 86 </span>    &quot;folke/tokyonight.nvim&quot;,
+<span id="L87" class="LineNr"> 87 </span>
+<span id="L88" class="LineNr"> 88 </span>    -- &gt; Treesitter #001022
+<span id="L89" class="LineNr"> 89 </span>    &quot;nvim-treesitter/nvim-treesitter&quot;,
+<span id="L90" class="LineNr"> 90 </span>    &quot;ThePrimeagen/refactoring.nvim&quot;,
+<span id="L91" class="LineNr"> 91 </span>    &quot;Badhi/nvim-treesitter-cpp-tools&quot;,
+<span id="L92" class="LineNr"> 92 </span>    &quot;nvim-treesitter/nvim-treesitter-context&quot;,
+<span id="L93" class="LineNr"> 93 </span>
+<span id="L94" class="LineNr"> 94 </span>    -- &gt; Lsp #001023
+<span id="L95" class="LineNr"> 95 </span>    &quot;williamboman/mason.nvim&quot;,
+<span id="L96" class="LineNr"> 96 </span>    &quot;neovim/nvim-lspconfig&quot;,
+<span id="L97" class="LineNr"> 97 </span>    &quot;jose-elias-alvarez/null-ls.nvim&quot;,
+<span id="L98" class="LineNr"> 98 </span>    &quot;nvim-lua/plenary.nvim&quot;,
+<span id="L99" class="LineNr"> 99 </span>    &quot;folke/neodev.nvim&quot;,
+<span id="L100" class="LineNr">100 </span>    &quot;ray-x/lsp_signature.nvim&quot;,
+<span id="L101" class="LineNr">101 </span>    &quot;nvim-lua/lsp-status.nvim&quot;,
+<span id="L102" class="LineNr">102 </span>    &quot;onsails/lspkind.nvim&quot;,
+<span id="L103" class="LineNr">103 </span>    &quot;nvimdev/lspsaga.nvim&quot;,
+<span id="L104" class="LineNr">104 </span>    &quot;kosayoda/nvim-lightbulb&quot;,
+<span id="L105" class="LineNr">105 </span>    &quot;RishabhRD/nvim-lsputils&quot;,
+<span id="L106" class="LineNr">106 </span>    &quot;ray-x/navigator.lua&quot;,
+<span id="L107" class="LineNr">107 </span>
+<span id="L108" class="LineNr">108 </span>    -- &gt; Autocomplete and Snippets #001024
+<span id="L109" class="LineNr">109 </span>    &quot;hrsh7th/cmp-nvim-lsp&quot;,
+<span id="L110" class="LineNr">110 </span>    &quot;hrsh7th/cmp-buffer&quot;,
+<span id="L111" class="LineNr">111 </span>    &quot;hrsh7th/cmp-path&quot;,
+<span id="L112" class="LineNr">112 </span>    &quot;hrsh7th/cmp-cmdline&quot;,
+<span id="L113" class="LineNr">113 </span>    &quot;hrsh7th/nvim-cmp&quot;,
+<span id="L114" class="LineNr">114 </span>    &quot;saadparwaiz1/cmp_luasnip&quot;,
+<span id="L115" class="LineNr">115 </span>
+<span id="L116" class="LineNr">116 </span>    &quot;L3MON4D3/LuaSnip&quot;,
+<span id="L117" class="LineNr">117 </span>    &quot;rafamadriz/friendly-snippets&quot;,
+<span id="L118" class="LineNr">118 </span>    &quot;michaelb/sniprun&quot;,
+<span id="L119" class="LineNr">119 </span>
+<span id="L120" class="LineNr">120 </span>    -- &gt; Aesthetics #001025
+<span id="L121" class="LineNr">121 </span>    &quot;xiyaowong/transparent.nvim&quot;,
+<span id="L122" class="LineNr">122 </span>    &quot;goolord/alpha-nvim&quot;,
+<span id="L123" class="LineNr">123 </span>    &quot;nvim-lualine/lualine.nvim&quot;,
+<span id="L124" class="LineNr">124 </span>    &quot;mrjones2014/legendary.nvim&quot;,
+<span id="L125" class="LineNr">125 </span>
+<span id="L126" class="LineNr">126 </span>    -- &gt; Dropbar #001026
+<span id="L127" class="LineNr">127 </span>    -- &quot;Bekaboo/dropbar.nvim&quot;,  -- This plugin only works for 0.10.0, so switch to it when neovim releases
+<span id="L128" class="LineNr">128 </span>                    -- a stable release.
+<span id="L129" class="LineNr">129 </span>
+<span id="L130" class="LineNr">130 </span>    -- &gt; Float Terminal #001027
+<span id="L131" class="LineNr">131 </span>    &quot;voldikss/vim-floaterm&quot;,
+<span id="L132" class="LineNr">132 </span>
+<span id="L133" class="LineNr">133 </span>    -- &gt; Asyncrun #001028
+<span id="L134" class="LineNr">134 </span>    &quot;skywind3000/asyncrun.vim&quot;,
+<span id="L135" class="LineNr">135 </span>
+<span id="L136" class="LineNr">136 </span>    -- &gt; Telescope #001029
+<span id="L137" class="LineNr">137 </span>    &quot;nvim-telescope/telescope.nvim&quot;,
+<span id="L138" class="LineNr">138 </span>    &quot;nvim-telescope/telescope-file-browser.nvim&quot;,
+<span id="L139" class="LineNr">139 </span>
+<span id="L140" class="LineNr">140 </span>    -- &gt; True Zen #00102a
+<span id="L141" class="LineNr">141 </span>    &quot;pocco81/true-zen.nvim&quot;,
+<span id="L142" class="LineNr">142 </span>
+<span id="L143" class="LineNr">143 </span>    -- &gt; Misellaneous #00102b
+<span id="L144" class="LineNr">144 </span>    &quot;nvim-lua/plenary.nvim&quot;
+<span id="L145" class="LineNr">145 </span>}
+<span id="L146" class="LineNr">146 </span>
+<span id="L147" class="LineNr">147 </span>-- Lazy Options -- #001030
+<span id="L148" class="LineNr">148 </span>local opts = {}
+<span id="L149" class="LineNr">149 </span>
+<span id="L150" class="LineNr">150 </span>-- .Setup() --  #001040
+<span id="L151" class="LineNr">151 </span>require(&quot;lazy&quot;).setup(plugins, opts)
+<span id="L152" class="LineNr">152 </span>
+<span id="L153" class="LineNr">153 </span>
+<span id="L154" class="LineNr">154 </span>-- 2. _T. R. E. E. S. I. T. T. E. R._ (Copy and Paste from website :P) -- #002000
+<span id="L155" class="LineNr">155 </span>require(&quot;nvim-treesitter.configs&quot;).setup {
+<span id="L156" class="LineNr">156 </span>    ensure_installed = {&quot;rust&quot;, &quot;vim&quot;, &quot;cpp&quot;, &quot;python&quot;, &quot;cmake&quot;, &quot;lua&quot;},
+<span id="L157" class="LineNr">157 </span>    auto_install = true,
+<span id="L158" class="LineNr">158 </span>    highlight = {
+<span id="L159" class="LineNr">159 </span>        enable = true,
+<span id="L160" class="LineNr">160 </span>    }
+<span id="L161" class="LineNr">161 </span>}
+<span id="L162" class="LineNr">162 </span>
+<span id="L163" class="LineNr">163 </span>require(&quot;treesitter-context&quot;).setup {
+<span id="L164" class="LineNr">164 </span>    enable = true
+<span id="L165" class="LineNr">165 </span>}
+<span id="L166" class="LineNr">166 </span>
+<span id="L167" class="LineNr">167 </span>-- 3. _M. I. S. C. E. L. L. A. N. E. O. U. S.  S. E. T. U. P_ -- #003000
+<span id="L168" class="LineNr">168 </span>
+<span id="L169" class="LineNr">169 </span>-- Transparent Background Plugin setup() -- #003010
+<span id="L170" class="LineNr">170 </span>require(&quot;transparent&quot;).setup {}
+<span id="L171" class="LineNr">171 </span>
+<span id="L172" class="LineNr">172 </span>-- True Zen .Setup() -- #003020
+<span id="L173" class="LineNr">173 </span>require(&quot;true-zen&quot;).setup {}
+<span id="L174" class="LineNr">174 </span>
+<span id="L175" class="LineNr">175 </span>-- Telescope .Setup() -- #003030
+<span id="L176" class="LineNr">176 </span>require(&quot;telescope&quot;).setup {
+<span id="L177" class="LineNr">177 </span>    pickers = {
+<span id="L178" class="LineNr">178 </span>        file_explorer = {
+<span id="L179" class="LineNr">179 </span>            picker_config_key = require(&quot;telescope&quot;).extensions.file_browser.file_browser
+<span id="L180" class="LineNr">180 </span>        }
+<span id="L181" class="LineNr">181 </span>    },
+<span id="L182" class="LineNr">182 </span>    extensions = {
+<span id="L183" class="LineNr">183 </span>        file_browser = {
+<span id="L184" class="LineNr">184 </span>            hijack_netrw = true
+<span id="L185" class="LineNr">185 </span>        }
+<span id="L186" class="LineNr">186 </span>    }
+<span id="L187" class="LineNr">187 </span>}
+<span id="L188" class="LineNr">188 </span>require(&quot;telescope&quot;).load_extension &quot;file_browser&quot;
+<span id="L189" class="LineNr">189 </span>
+<span id="L190" class="LineNr">190 </span>-- 4. _R. U. N. T. I. M. E.  C. O. M. M. A. N. D. S_ -- #004000
+<span id="L191" class="LineNr">191 </span>
+<span id="L192" class="LineNr">192 </span>vim.cmd(&quot;:TransparentEnable&quot;)
+<span id="L193" class="LineNr">193 </span>vim.cmd(&quot;:color tokyonight&quot;)
+<span id="L194" class="LineNr">194 </span>
+<span id="L195" class="LineNr">195 </span>require(&quot;lsp&quot;)
+<span id="L196" class="LineNr">196 </span>require(&quot;option&quot;)
+<span id="L197" class="LineNr">197 </span>-- require(&quot;lua.alpha&quot;)
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
