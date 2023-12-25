@@ -17,6 +17,7 @@ require("which-key").register {
 	["<F1>"] = { "<cmd> lua require('runfile').main() <CR>", "Runfile" },
 	["<F2>"] = { ":Telescope <CR>", "Runfile" },
 	["<F3>"] = { ":Telescope file_browser <CR>", "Runfile" },
+	["<F4>"] = { ":Telescope undo <CR>", "Runfile" },
 }
 
 -- FloatTerm -- #000030

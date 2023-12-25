@@ -54,7 +54,8 @@ a terminal to be effective
 		ix. Telescope #001029
 		x. True Zen #00102a
 		xi. Dap and Neotest #00102b
-		xii. Miscellaneous #00102c
+		xii. Github #00102c
+		xiii. Miscellaneous #00102d
 	c. Lazy Options #001030
 2. .Setup() #001040
 	a. Lazy .Setup() #002010
@@ -63,6 +64,9 @@ a terminal to be effective
 	d. True Zen .Setup() #002040
 	e. Telescope .Setup() #002050
 	f. Naviagator .Setup() #002060
+	g. Gitsigns .Setup() #002070
+	h. Better Escape .Setup() #002080
+	i. UFO .Setup() #002090
 4. Runtime Commands #00400
 ]]
 
@@ -140,6 +144,7 @@ local plugins = {
 	-- > Telescope #001029
 	"nvim-telescope/telescope.nvim",
 	"nvim-telescope/telescope-file-browser.nvim",
+	"debugloop/telescope-undo.nvim",
 
 	-- > True Zen #00102a
 	"pocco81/true-zen.nvim",
@@ -154,10 +159,18 @@ local plugins = {
 	"nvim-neotest/neotest",
 	"nvim-neotest/neotest-python",
 
-	-- > Misellaneous #00102c
+	-- > Github #00102c
+	"kdheepak/lazygit.nvim",
+	"lewis6991/gitsigns.nvim",
+
+	-- > Misellaneous #00102d
 	"nvim-lua/plenary.nvim",
 	"folke/which-key.nvim",
-	"edluffy/hologram.nvim"
+	"edluffy/hologram.nvim",
+	"max397574/better-escape.nvim",
+	"kevinhwang91/nvim-ufo",
+		"kevinhwang91/promise-async",
+	"MunifTanjim/nui.nvim"
 }
 
 -- Lazy Options -- #001030
@@ -183,7 +196,13 @@ require("treesitter-context").setup {
 }
 
 -- Transparent Background Plugin .Setup() -- #002030
-require("transparent").setup {}
+require("transparent").setup {
+	extra_groups = {
+		--"Nui",
+		--"NormalFloat"
+	}
+
+}
 
 -- True Zen .Setup() -- #002040
 require("true-zen").setup {}
@@ -197,6 +216,7 @@ require("telescope").setup {
 	}
 }
 require("telescope").load_extension "file_browser"
+
 -- https://github.com/nvim-telescope/telescope.nvim/blob/master/developers.md#guide-to-your-first-picker
 -- Very fucking annoying to do since the code required ISN'T even in the fucking :h telescope
 
@@ -219,9 +239,18 @@ require("navigator").setup {
 }
 
 -- Hologram.Setup() -- #002060
-require('hologram').setup{
+require("hologram").setup{
     auto_display = true
 }
+
+-- Gitsigns .Setup() -- #002070
+require("gitsigns").setup {}
+
+-- Better Escape .Setup() -- #002080
+require("better_escape").setup()
+
+-- UFO .Setup() -- #002090
+require('ufo').setup()
 
 -- 4. _R. U. N. T. I. M. E.  C. O. M. M. A. N. D. S_ -- #004000
 
@@ -232,3 +261,9 @@ require("lsp")
 require("option")
 require("mappings")
 -- require("lua.alpha")
+
+-- NOENTRYBEYONDPOINT --> TESTING GROUNDS :>
+
+vim.cmd(
+"noremap <silent> <Esc> :lua local popup = require(\"nui.popup\")({ enter = true, focusable = true, border = { style = \"single\", }, position = \"50%\", size = \"20%\" }) popup:mount() vim.api.nvim_buf_set_lines(popup.bufnr, 0, 1, false, { \"Reminder: Use the motherfucking js instead of esc\" }) <CR>"
+)
