@@ -67,6 +67,7 @@ a terminal to be effective
 	g. Gitsigns .Setup() #002070
 	h. Better Escape .Setup() #002080
 	i. UFO .Setup() #002090
+	j. Neodev .Setup() -- #0020a0
 4. Runtime Commands #00400
 ]]
 
@@ -112,6 +113,7 @@ local plugins = {
 			"RishabhRD/popfix",
 		"ray-x/navigator.lua",
 		"ray-x/guihua.lua",
+		"mfussenegger/nvim-dap",
 	
 	-- > Autocomplete and Snippets #001024
 	"hrsh7th/nvim-cmp",
@@ -170,7 +172,8 @@ local plugins = {
 	"max397574/better-escape.nvim",
 	"kevinhwang91/nvim-ufo",
 		"kevinhwang91/promise-async",
-	"MunifTanjim/nui.nvim"
+	"MunifTanjim/nui.nvim",
+	-- "benlubas/wrapping-paper.nvim"  -- This is a promising plugin that I will use in the future when its fully developed
 }
 
 -- Lazy Options -- #001030
@@ -252,6 +255,9 @@ require("better_escape").setup()
 -- UFO .Setup() -- #002090
 require('ufo').setup()
 
+-- Neodev .Setup() -- #0020a0
+require("neodev").setup {}
+
 -- 4. _R. U. N. T. I. M. E.  C. O. M. M. A. N. D. S_ -- #004000
 
 vim.cmd(":TransparentEnable")
@@ -264,6 +270,3 @@ require("mappings")
 
 -- NOENTRYBEYONDPOINT --> TESTING GROUNDS :>
 
-vim.cmd(
-"noremap <silent> <Esc> :lua local popup = require(\"nui.popup\")({ enter = true, focusable = true, border = { style = \"single\", }, position = \"50%\", size = \"20%\" }) popup:mount() vim.api.nvim_buf_set_lines(popup.bufnr, 0, 1, false, { \"Reminder: Use the motherfucking js instead of esc\" }) <CR>"
-)

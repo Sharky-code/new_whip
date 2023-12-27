@@ -31,4 +31,5 @@ nnoremap   <silent>   <F9>    :FloatermNext<CR>
 tnoremap   <silent>   <F9>    <C-\><C-n>:FloatermNext<CR>
 nnoremap   <silent>   <F12>   :FloatermToggle<CR>
 tnoremap   <silent>   <F12>   <C-\><C-n>:FloatermToggle<CR>
+inoremap <silent> <Esc> <C-\><C-n>:lua local popup = require("nui.popup")({ enter = true, focusable = true, border = { style = "single", }, position = "50%", size = "20%" }) popup:mount() vim.api.nvim_buf_set_lines(popup.bufnr, 0, 1, false, { "Reminder: Use the motherfucking js instead of esc" }) <CR>
 ]]
