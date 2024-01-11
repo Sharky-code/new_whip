@@ -1,8 +1,0 @@
-[19:08:07 2024-01-08] FETCHING Version 2.29.1
-[19:08:07 2024-01-08] DOWNLOADING https://github.com/spicetify/spicetify-cli/releases/download/v2.29.1/spicetify-2.29.1-darwin-arm64.tar.gz
-[19:08:11 2024-01-08] EXTRACTING /Users/rabbity/.spicetify/spicetify.tar.gz
-[19:08:11 2024-01-08] SETTING EXECUTABLE PERMISSIONS TO /Users/rabbity/.spicetify/spicetify
-[19:08:11 2024-01-08] REMOVING /Users/rabbity/.spicetify/spicetify.tar.gz
-[19:08:11 2024-01-08] spicetify path already set in /Users/rabbity/.zshrc, continuing...
-[19:08:11 2024-01-08] spicetify v2.29.1 was installed successfully to /Users/rabbity/.spicetify
-[19:08:11 2024-01-08] Run 'spicetify --help' to get started

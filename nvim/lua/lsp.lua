@@ -126,12 +126,13 @@ require("lspconfig").clangd.setup {
 	autostart = true,
 	cmd = {
 		"clangd",
+		"-std=c++17",
 		"--background-index",
 		"--clang-tidy",
 		"--header-insertion=iwyu",
 		"--completion-style=detailed",
 		"--function-arg-placeholders",
-		-- vim.fn.input("Input custom argument for clangd: ")
+		--vim.fn.input("Input custom argument for clangd: ")
 	},
 	on_attach = function(client, bufnr)
 		custom_on_attach(client, bufnr)
@@ -282,7 +283,7 @@ cmp.setup {
 			"i",
 			"s",
 		}),
-		["<Up>"] = cmp.mapping(function(fallback)
+		["<Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_prev_item()
 			elseif luasnip.jumpable(-1) then

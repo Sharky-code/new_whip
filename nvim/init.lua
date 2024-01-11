@@ -171,7 +171,7 @@ local plugins = {
 	-- > Misellaneous #00102d
 	"nvim-lua/plenary.nvim",
 	"folke/which-key.nvim",
-	"edluffy/hologram.nvim",
+	-- "edluffy/hologram.nvim",
 	"max397574/better-escape.nvim",
 	"kevinhwang91/nvim-ufo",
 		"kevinhwang91/promise-async",
@@ -249,9 +249,7 @@ require("navigator").setup {
 }
 
 -- Hologram.Setup() -- #002060
-require("hologram").setup{
-    auto_display = true
-}
+-- require("hologram").setup{ auto_display = true }
 
 -- Gitsigns .Setup() -- #002070
 require("gitsigns").setup {}
