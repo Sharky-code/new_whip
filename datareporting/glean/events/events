@@ -1,0 +1,6 @@
+{"timestamp":27286563,"category":"fog.validation","name":"validate_early_event"}
+{"timestamp":27287158,"category":"webcompatreporting","name":"reason_dropdown","extra":{"setting":"disabled"}}
+{"timestamp":27287416,"category":"nimbus_events","name":"unenroll_failed","extra":{"reason":"already-unenrolled","experiment":"add-an-image-to-pdf-with-alt-text-rollout"}}
+{"timestamp":27549963,"category":"serp","name":"impression","extra":{"impression_id":"7aee0f42-b540-4187-9eef-e67d2ad1a2b8","partner_code":"newext","shopping_tab_displayed":"false","is_shopping_page":"false","source":"urlbar","tagged":"true","provider":"duckduckgo","is_private":"false"}}
+{"timestamp":27552577,"category":"serp","name":"engagement","extra":{"target":"non_ads_link","impression_id":"7aee0f42-b540-4187-9eef-e67d2ad1a2b8","action":"clicked"}}
+{"timestamp":27990547,"category":"serp","name":"impression","extra":{"is_private":"false","shopping_tab_displayed":"false","impression_id":"fb657afd-a82a-4248-80c2-9fc6602d8761","tagged":"true","source":"urlbar","is_shopping_page":"false","partner_code":"newext","provider":"duckduckgo"}}
