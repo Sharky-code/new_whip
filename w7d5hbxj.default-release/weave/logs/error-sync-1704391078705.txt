@@ -1,0 +1,74 @@
+1704382678671	Sync.LogManager	DEBUG	Flushing file log
+1704382678674	Sync.LogManager	DEBUG	Log cleanup threshold time: 1703518678674
+1704382678678	Sync.LogManager	DEBUG	Done deleting files.
+1704384474340	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704384474342	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704384481655	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704384481672	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384481727	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384482799	Sync.RemoteTabs	INFO	Generating tab list with filter
+1704384482801	Sync.RemoteTabs	INFO	Final tab list has 0 clients with 0 tabs.
+1704384487843	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384487922	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384491341	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384492459	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384497365	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384499376	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384537905	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704384577933	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1704384577933	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704384577933	Sync.Service	INFO	Starting sync at 2024-01-04 16:09:37 in browser session ip-QsKJ4ObdU
+1704384577933	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704384577937	Sync.Status	INFO	Resetting Status.
+1704384577937	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1704384577938	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704384577938	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704384577938	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704384577938	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704384577939	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704384583269	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704387158583	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704387158705	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1704387158706	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704387158708	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704387212832	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704387212984	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1704387212984	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1704387212989	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704387212990	Sync.Service	INFO	Starting sync at 2024-01-04 16:53:32 in browser session ip-QsKJ4ObdU
+1704387212991	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1369:6
+sync/<@service.sys.mjs:1334:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1335:7
+1704387212991	Sync.Service	INFO	Cannot start sync: already syncing?
+1704390264418	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704390264501	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1704390264502	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704390264506	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704390433659	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704390433783	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1704390433783	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1704390433787	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704390433787	Sync.Service	INFO	Starting sync at 2024-01-04 17:47:13 in browser session ip-QsKJ4ObdU
+1704390433788	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1369:6
+sync/<@service.sys.mjs:1334:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1335:7
+1704390433788	Sync.Service	INFO	Cannot start sync: already syncing?
+1704390880647	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704390880647	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704390881328	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704391078698	Sync.Resource	ERROR	Request timed out after 300000ms. Aborting.
+1704391078699	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections failed: AbortError: The operation was aborted.  Stack trace: _doRequest/timeoutId<()@resource://services-sync/resource.sys.mjs:181
+notify()@resource://gre/modules/Timer.sys.mjs:49
+1704391078699	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1704391078699	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1704391078700	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Request aborted (timeout)"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "JS frame :: resource://services-sync/resource.sys.mjs :: _doRequest :: line 191"  data: no] Stack trace: _doRequest()@resource://services-sync/resource.sys.mjs:191
+1704391078700	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1704391078705	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Request aborted (timeout)"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "JS frame :: resource://services-sync/resource.sys.mjs :: _doRequest :: line 191"  data: no] Stack trace: _doRequest()@resource://services-sync/resource.sys.mjs:191

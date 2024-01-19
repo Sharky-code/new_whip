@@ -1,0 +1,148 @@
+1704499468162	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704505371533	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704505371543	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704505415213	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704505415214	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704506835597	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507031908	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507121711	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704507121711	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507291525	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704507291535	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507291576	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507291798	Sync.RemoteTabs	INFO	Generating tab list with filter
+1704507291799	Sync.RemoteTabs	INFO	Final tab list has 0 clients with 0 tabs.
+1704507293418	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507298659	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507303250	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507304877	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704507304880	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507304890	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507304907	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507306634	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507307337	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507333880	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507334581	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507334836	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507342009	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507342798	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507343063	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507346718	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507347963	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507353390	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507354698	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507359856	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507361001	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507361557	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507451764	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704507451775	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507451807	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507459376	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507477067	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704507477071	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704507486273	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1704507516904	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507570414	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507608133	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704507608135	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507700955	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507701056	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1704507701057	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704507701060	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704507903229	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507903394	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1704507903394	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1704507903397	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704507903398	Sync.Service	INFO	Starting sync at 2024-01-06 02:25:03 in browser session QOMnE-goX9Tj
+1704507903398	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704507903408	Sync.Status	INFO	Resetting Status.
+1704507903408	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1704507903410	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704507903411	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704507903411	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704507903411	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704507903412	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704507903412	Sync.SyncAuthManager	INFO	Getting sync key
+1704507903413	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1704507903413	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1704507903413	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704507903413	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704507903413	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704507903413	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1704507903413	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1704507907405	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507907547	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1704507907547	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704507907548	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704507909361	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704507909951	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1704507909951	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1704507909953	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704507909954	Sync.Service	INFO	Starting sync at 2024-01-06 02:25:09 in browser session QOMnE-goX9Tj
+1704507909954	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1369:6
+sync/<@service.sys.mjs:1334:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1335:7
+1704507909955	Sync.Service	INFO	Cannot start sync: already syncing?
+1704507915448	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2147500036 - NS_ERROR_ABORT
+1704507915448	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]"}
+1704508005354	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704508005381	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1704508005381	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704508005382	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704508005665	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704508005797	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1704508005797	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1704508005799	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704508005799	Sync.Service	INFO	Starting sync at 2024-01-06 02:26:45 in browser session QOMnE-goX9Tj
+1704508005800	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1369:6
+sync/<@service.sys.mjs:1334:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1335:7
+1704508005800	Sync.Service	INFO	Cannot start sync: already syncing?
+1704508010603	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704508036615	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704508036777	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1704508036777	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704508036781	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704508037520	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704508037639	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1704508037639	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1704508037641	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704508037641	Sync.Service	INFO	Starting sync at 2024-01-06 02:27:17 in browser session QOMnE-goX9Tj
+1704508037642	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.sys.mjs:43:5) JS Stack trace: LockException@util.sys.mjs:43:5
+throwLockException@util.sys.mjs:127:11
+WrappedLock@util.sys.mjs:141:15
+_lockedSync@service.sys.mjs:1369:6
+sync/<@service.sys.mjs:1334:18
+WrappedCatch@util.sys.mjs:112:27
+sync@service.sys.mjs:1335:7
+1704508037642	Sync.Service	INFO	Cannot start sync: already syncing?
+1704508203417	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1704508203419	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1704508203419	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1704508203420	Sync.SyncAuthManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1704508203425	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704508203425	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704508203425	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704508203425	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704508203427	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704508203885	Sync.Resource	DEBUG	GET fail 401 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections
+1704508203885	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections failed with status 401
+1704508203886	Sync.Service	INFO	Logging out
+1704508203887	Sync.ErrorHandler	INFO	Got 401 response; resetting clusterURL.
+1704508203887	Sync.ErrorHandler	DEBUG	New mid-sync 401 failure. Making a note.
+1704508203888	Sync.ErrorHandler	INFO	Attempting to schedule another sync.
+1704508203888	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1704508203888	Sync.ErrorHandler	ERROR	Sync encountered an error: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Sat, 06 Jan 2024 02:30:03 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1704508203.89"},"obj":0}
+1704508203890	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1704508203891	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1704508203899	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Sat, 06 Jan 2024 02:30:03 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1704508203.89"},"obj":0}

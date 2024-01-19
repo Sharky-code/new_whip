@@ -1,0 +1,48 @@
+1704488341969	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704491061172	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704491061187	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704492119761	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704492119761	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704492119764	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704492119764	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704492119765	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704492125546	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704493745504	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704493745504	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704496858832	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1704496858832	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704497077953	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704497077955	Sync.Service	INFO	Starting sync at 2024-01-05 23:24:37 in browser session QOMnE-goX9Tj
+1704497077956	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704497077986	Sync.Status	INFO	Resetting Status.
+1704497077986	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1704497077989	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704497077989	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704497077990	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704497077990	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704497077991	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704497077992	Sync.SyncAuthManager	INFO	Getting sync key
+1704497077993	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1704497077993	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1704497077993	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704497077993	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704497077993	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704497077993	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1704497077994	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1704497138004	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1704497138005	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1704497138007	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1704497138007	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1704497138009	Sync.SyncAuthManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1704497138020	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1704497138020	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]"}
+1704497138020	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]"}
+1704497198027	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1704497198027	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1704497198027	Sync.Status	DEBUG	Status.service: error.login.failed => error.sync.failed
+1704497198028	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1704497198031	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1704497198034	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1704497198047	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available

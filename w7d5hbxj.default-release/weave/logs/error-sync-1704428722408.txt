@@ -1,0 +1,70 @@
+1704425061012	Sync.LogManager	DEBUG	Flushing file log
+1704425061016	Sync.LogManager	DEBUG	Log cleanup threshold time: 1703561061016
+1704425061083	Sync.LogManager	DEBUG	Done deleting files.
+1704428248237	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/attached_clients
+1704428278244	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/attached_clients failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1704428278244	Hawk	WARN	hawk request error: [Exception... "NS_ERROR_UNKNOWN_HOST"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479"  data: no] Stack trace: onStopRequest()@resource://services-common/rest.sys.mjs:479
+1704428278245	Services.Common.RESTResponse	DEBUG	Caught exception fetching HTTP status code: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.responseStatus]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: get status :: line 616"  data: no] Stack trace: get status()@resource://services-common/rest.sys.mjs:616
+request()@resource://services-common/hawkclient.sys.mjs:230
+1704428278245	Services.Common.RESTResponse	DEBUG	Caught exception fetching HTTP status text: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.responseStatusText]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: get statusText :: line 631"  data: no] Stack trace: get statusText()@resource://services-common/rest.sys.mjs:631
+request()@resource://services-common/hawkclient.sys.mjs:238
+1704428278245	Hawk	DEBUG	(Response) /account/attached_clients: code: null - Status text: null
+1704428278245	Services.Common.RESTResponse	DEBUG	Caught exception processing response headers: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.visitResponseHeaders]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: get headers :: line 663"  data: no] Stack trace: get headers()@resource://services-common/rest.sys.mjs:663
+_maybeNotifyBackoff()@resource://services-common/hawkclient.sys.mjs:307
+request()@resource://services-common/hawkclient.sys.mjs:246
+1704428278246	Services.Common.RESTResponse	DEBUG	Caught exception processing response headers: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.visitResponseHeaders]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: get headers :: line 663"  data: no] Stack trace: get headers()@resource://services-common/rest.sys.mjs:663
+_maybeNotifyBackoff()@resource://services-common/hawkclient.sys.mjs:307
+request()@resource://services-common/hawkclient.sys.mjs:247
+1704428278248	Services.Common.RESTResponse	DEBUG	Caught exception fetching HTTP status text: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.responseStatusText]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: get statusText :: line 631"  data: no] Stack trace: get statusText()@resource://services-common/rest.sys.mjs:631
+_constructError()@resource://services-common/hawkclient.sys.mjs:113
+request()@resource://services-common/hawkclient.sys.mjs:252
+1704428278248	Services.Common.RESTResponse	DEBUG	Caught exception fetching HTTP status code: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.responseStatus]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: get status :: line 616"  data: no] Stack trace: get status()@resource://services-common/rest.sys.mjs:616
+_constructError()@resource://services-common/hawkclient.sys.mjs:114
+request()@resource://services-common/hawkclient.sys.mjs:252
+1704428278248	Services.Common.RESTResponse	DEBUG	Caught exception fetching HTTP status code: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.responseStatus]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: get status :: line 616"  data: no] Stack trace: get status()@resource://services-common/rest.sys.mjs:616
+_constructError()@resource://services-common/hawkclient.sys.mjs:115
+request()@resource://services-common/hawkclient.sys.mjs:252
+1704428278249	Services.Common.RESTResponse	DEBUG	Caught exception processing response headers: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannel.visitResponseHeaders]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://services-common/rest.sys.mjs :: get headers :: line 663"  data: no] Stack trace: get headers()@resource://services-common/rest.sys.mjs:663
+_constructError()@resource://services-common/hawkclient.sys.mjs:121
+request()@resource://services-common/hawkclient.sys.mjs:252
+1704428278249	FirefoxAccounts	ERROR	error GETing /account/attached_clients: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]","message":null,"code":null,"errno":null}
+1704428661092	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704428661092	Sync.Service	INFO	Starting sync at 2024-01-05 04:24:21 in browser session ip-QsKJ4ObdU
+1704428661093	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704428661106	Sync.Status	INFO	Resetting Status.
+1704428661106	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1704428661107	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704428661107	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704428661107	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704428661107	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704428661107	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704428661109	Sync.SyncAuthManager	INFO	Getting sync key
+1704428661109	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1704428661109	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1704428661109	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704428661109	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704428661109	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704428661109	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1704428661110	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1704428691117	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1704428691117	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1704428691118	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1704428691118	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1704428691119	Sync.SyncAuthManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1704428691129	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1704428691129	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]"}
+1704428691129	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]"}
+1704428722394	Sync.Resource	DEBUG	GET fail 401 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections
+1704428722394	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections failed with status 401
+1704428722394	Sync.Service	INFO	Logging out
+1704428722395	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704428722396	Sync.ErrorHandler	INFO	Got 401 response; resetting clusterURL.
+1704428722397	Sync.ErrorHandler	DEBUG	New mid-sync 401 failure. Making a note.
+1704428722397	Sync.ErrorHandler	INFO	Attempting to schedule another sync.
+1704428722397	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1704428722398	Sync.ErrorHandler	ERROR	Sync encountered an error: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Fri, 05 Jan 2024 04:25:22 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1704428722.32"},"obj":0}
+1704428722400	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=reschedule)
+1704428722401	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1704428722407	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Fri, 05 Jan 2024 04:25:22 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1704428722.32"},"obj":0}

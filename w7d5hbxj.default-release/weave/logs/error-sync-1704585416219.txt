@@ -1,0 +1,101 @@
+1704581763206	Sync.LogManager	DEBUG	Flushing file log
+1704581763208	Sync.LogManager	DEBUG	Log cleanup threshold time: 1703717763208
+1704581763216	Sync.LogManager	DEBUG	Done deleting files.
+1704581789410	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704581791385	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704582461659	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704582461669	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582464370	Sync.RemoteTabs	INFO	Generating tab list with filter
+1704582464371	Sync.RemoteTabs	INFO	Final tab list has 0 clients with 0 tabs.
+1704582464452	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582479072	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582479155	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582486114	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582492531	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582494750	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582502273	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582518610	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582540093	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582540095	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704582779364	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582779438	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582780138	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582780142	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582780694	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704582780697	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582780722	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582784542	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582784982	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582803838	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704582803841	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582805224	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582806135	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704582858856	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582859101	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582865952	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582866036	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582866989	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582867078	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582873301	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582873364	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582874050	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582874125	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582874942	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582875843	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582907101	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582980699	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582981696	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704582981782	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704583573565	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704583573570	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704583573582	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704583593892	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704583595779	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704583595784	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704583595796	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704583614036	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704583618287	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write or a score bump
+1704583618291	Sync.Engine.Tabs.Tracker	DEBUG	Detected a tab change, but conditions aren't met for a quick write - bumping score
+1704585302480	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704585302480	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704585302483	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704585302483	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704585302484	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704585332492	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1704585332492	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.sys.mjs :: onStopRequest :: line 479\"  data: no]"}
+1704585364167	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704585364167	Sync.Service	INFO	Starting sync at 2024-01-06 23:56:04 in browser session goNU7d8pvLmN
+1704585364167	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704585364171	Sync.Status	INFO	Resetting Status.
+1704585364171	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1704585364172	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1704585364172	Sync.SyncAuthManager	INFO	Getting sync key
+1704585364172	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1704585364172	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1704585364172	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704585364172	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704585364172	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704585364173	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1704585364173	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1704585396877	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1704585396877	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1704585396877	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1704585396877	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1704585396878	Sync.SyncAuthManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.sys.mjs:28:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.sys.mjs:51:16
+_tokenServerExchangeRequest@tokenserverclient.sys.mjs:235:13
+1704585396879	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1704585416213	Sync.Resource	DEBUG	GET fail 401 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections
+1704585416213	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections failed with status 401
+1704585416213	Sync.Service	INFO	Logging out
+1704585416213	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1704585416213	Sync.ErrorHandler	INFO	Got 401 response; resetting clusterURL.
+1704585416213	Sync.ErrorHandler	DEBUG	New mid-sync 401 failure. Making a note.
+1704585416213	Sync.ErrorHandler	INFO	Attempting to schedule another sync.
+1704585416213	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1704585416214	Sync.ErrorHandler	ERROR	Sync encountered an error: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Sat, 06 Jan 2024 23:56:56 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1704585416.15"},"obj":0}
+1704585416214	Sync.SyncScheduler	DEBUG	Sync error count has exceeded 3; enforcing backoff.
+1704585416214	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 3137469 ms.
+1704585416214	Sync.SyncScheduler	DEBUG	Next sync in 3137469 ms. (why=client-backoff-schedule)
+1704585416214	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1704585416218	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/197306892/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Sat, 06 Jan 2024 23:56:56 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1704585416.15"},"obj":0}

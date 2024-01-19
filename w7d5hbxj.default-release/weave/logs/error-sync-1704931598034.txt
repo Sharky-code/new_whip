@@ -1,0 +1,351 @@
+1704813774825	FirefoxAccounts	TRACE	initializing new storage manager
+1704813774825	FirefoxAccounts	TRACE	starting fetch of json user data
+1704813774830	FirefoxAccounts	TRACE	finished fetch of json user data - took: 5
+1704813774830	FirefoxAccounts	DEBUG	reading secure storage with existing: []
+1704813774830	FirefoxAccounts	TRACE	starting fetch of user data from the login manager
+1704813774832	FirefoxAccounts	DEBUG	secure read fetched items: ["scopedKeys"]
+1704813774832	FirefoxAccounts	TRACE	initializing of new storage manager done
+1704813774834	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Initialized
+1704813774834	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704813774834	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704813774834	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704813774834	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704813774834	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704813774866	FirefoxAccounts	DEBUG	FxAccountsWebChannel registered: account_updates with origin https://accounts.firefox.com
+1704813774879	FirefoxAccounts	INFO	fetching updated device list
+1704813774882	Services.Common.RESTRequest	DEBUG	GET request to https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1702999374881
+1704813775121	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704813775153	Services.Common.RESTRequest	DEBUG	GET https://api.accounts.firefox.com/v1/account/devices?filterIdleDevicesTimestamp=1702999374881 200
+1704813775153	Hawk	DEBUG	(Response) /account/devices?filterIdleDevicesTimestamp=1702999374881: code: 200 - Status text: 
+1704813775153	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -153
+1704813775153	FirefoxAccounts	INFO	Got new device list: 8fbf9bf62b0460c470cee196fc1b5c0c
+1704813775154	FirefoxAccounts	DEBUG	FxAccountsPush loading service
+1704813775154	FirefoxAccounts	DEBUG	FxAccountsPush initialized
+1704813775155	FirefoxAccounts	TRACE	Our push subscription looks OK
+1704813775155	FirefoxAccounts	INFO	updating the cache
+1704813776510	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1704820691177	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704820691177	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704820691179	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704820691179	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704820691180	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704820691436	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704821440132	Sync.RemoteTabs	DEBUG	Sync isn't yet ready; assuming tab engine is enabled
+1704821440151	Sync.Status	INFO	Resetting Status.
+1704821440151	Sync.Status	DEBUG	Status.service: undefined => success.status_ok
+1704821440151	Sync.SyncScheduler	TRACE	Setting SyncScheduler policy values to defaults.
+1704821440151	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704821440152	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.no_username
+1704821440152	Sync.Status	DEBUG	Status.service: success.status_ok => service.client_not_configured
+1704821440152	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704821440152	Sync.Service	INFO	Loading Weave 1.123.0
+1704821440152	Sync.Engine.Clients	DEBUG	Engine constructed
+1704821440153	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1704821440153	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704821440153	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704821440153	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704821440153	Sync.RemoteTabs	INFO	Sync client is not configured, so not attempting a tab sync
+1704821440153	Sync.RemoteTabs	INFO	Generating tab list with filter
+1704821440153	Sync.RemoteTabs	DEBUG	Sync isn't yet ready, so returning an empty tab list
+1704821440156	Sync.Engine.Addons	DEBUG	Engine constructed
+1704821440163	Sync.Engine.Addons	DEBUG	SyncEngine initialized: addons
+1704821440165	Sync.Engine.Passwords	DEBUG	Engine constructed
+1704821440166	Sync.Engine.Passwords	DEBUG	SyncEngine initialized: passwords
+1704821440167	Sync.Engine.Prefs	DEBUG	Engine constructed
+1704821440171	Sync.Engine.Prefs	DEBUG	SyncEngine initialized: prefs
+1704821440172	Sync.Engine.Bookmarks	DEBUG	Engine constructed
+1704821440175	Sync.Engine.Bookmarks	DEBUG	SyncEngine initialized: bookmarks
+1704821440175	Sync.Engine.Forms	DEBUG	Engine constructed
+1704821440178	Sync.Engine.Forms	DEBUG	SyncEngine initialized: forms
+1704821440179	Sync.Engine.History	DEBUG	Engine constructed
+1704821440180	Sync.Engine.History	DEBUG	SyncEngine initialized: history
+1704821440181	Sync.Engine.Tabs	DEBUG	Engine constructed
+1704821440181	Sync.Engine.Tabs	DEBUG	SyncEngine initialized: tabs
+1704821440183	Sync.Engine.Tabs	INFO	Got a bridged engine!
+1704821440184	Sync.Engine.CreditCards	DEBUG	Engine constructed
+1704821440184	Sync.Engine.CreditCards	DEBUG	SyncEngine initialized: creditcards
+1704821440185	Sync.Engine.Extension-Storage	DEBUG	Engine constructed
+1704821440186	Sync.Engine.Extension-Storage	DEBUG	SyncEngine initialized: extension-storage
+1704821440186	Sync.Service	INFO	Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:121.0) Gecko/20100101 Firefox/121.0
+1704821440186	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704821440186	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704821440186	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704821440187	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704821440187	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704821440187	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704821440187	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704821440187	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704821440434	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704824291181	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704824291181	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704824291181	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704824291181	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704824291182	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704824291404	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 401
+1704824291404	FirefoxAccounts	INFO	Fetching the profile returned a 401 - revoking our token and retrying
+1704824291404	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/oauth/destroy
+1704824291404	Services.Common.RESTRequest	DEBUG	POST Length: 900
+1704824291405	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1704824291405	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","device","encryptedSendTabKeys","oauthTokens","profileCache"]
+1704824291405	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","device","encryptedSendTabKeys","oauthTokens","profileCache"]
+1704824291405	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704824291407	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/oauth/token
+1704824291407	Services.Common.RESTRequest	DEBUG	POST Length: 81
+1704824291407	FirefoxAccounts	TRACE	finished write of json user data - took: 2
+1704824291408	FirefoxAccounts	DEBUG	writing secure storage: ["scopedKeys"]
+1704824291408	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1704824291409	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1704824291618	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/oauth/destroy 200
+1704824291619	Hawk	DEBUG	(Response) /oauth/destroy: code: 200 - Status text: 
+1704824291619	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -619
+1704824292659	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/oauth/token 200
+1704824292659	Hawk	DEBUG	(Response) /oauth/token: code: 200 - Status text: 
+1704824292660	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -660
+1704824292660	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1704824292660	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","device","encryptedSendTabKeys","oauthTokens","profileCache"]
+1704824292660	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","device","encryptedSendTabKeys","oauthTokens","profileCache"]
+1704824292660	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704824292662	FirefoxAccounts	TRACE	finished write of json user data - took: 2
+1704824292662	FirefoxAccounts	DEBUG	writing secure storage: ["scopedKeys"]
+1704824292662	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1704824292664	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1704824292855	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704827891452	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704827891452	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704827891453	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704827891453	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704827891453	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704827891718	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704830301278	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704831572681	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704831572682	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704831572683	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704831572683	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704831572684	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704831572951	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704831660244	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704831660244	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704831660244	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704835172684	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704835172684	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704835172685	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704835172685	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704835172686	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704835172920	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704838772747	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704838772747	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704838772748	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704838772748	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704838772748	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704838773140	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704839481018	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704839481872	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704840436019	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704842372862	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704842372862	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704842372863	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704842372863	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704842372863	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704842373100	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704844592388	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704844813783	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704847510918	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704847510918	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704847510921	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704847510921	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704847510922	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704847511167	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704850879698	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704850998027	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704851271382	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704851271383	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704851271384	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704851271384	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704851271384	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704851271626	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704859711457	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704859711457	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704859711458	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704859711458	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704859711458	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704859711698	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704864380550	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704864380550	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704864380552	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704864380552	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704864380552	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704864380786	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704873205267	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704876811639	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704876811639	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704876811641	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704876811641	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704876811641	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704876811883	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704879389849	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704880414415	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704880414415	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704880414416	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704880414416	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704880414417	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704880414660	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704883184573	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704883184573	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704883184574	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704884014499	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704884014499	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704884014501	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704884014501	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704884014502	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704884014745	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704885865552	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704885865552	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704885865552	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704887614544	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704887614544	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704887614546	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704887614546	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704887614547	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704887614799	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704891214555	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704891214555	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704891214558	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704891214558	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704891214559	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704891214800	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704891799408	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704894838689	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704894838689	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704894838689	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704894839728	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704894839728	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704894839728	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704894943175	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704894943175	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704894943176	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704894943176	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704894943176	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704894943829	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704898543218	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704898543218	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704898543219	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704898543219	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704898543219	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704898543475	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704902145508	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704902145508	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704902145510	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704902145510	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704902145511	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704902145824	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704903109465	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704903109465	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704903109465	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704903110173	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704903110173	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704903110173	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704903110813	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704903110813	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704903110813	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704905745632	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704905745632	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704905745635	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704905745635	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704905745635	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704905746032	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704909345689	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704909345689	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704909345691	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704909345691	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704909345692	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704909345953	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704912946191	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704912946191	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704912946192	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704912946192	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704912946192	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704912946434	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 401
+1704912946434	FirefoxAccounts	INFO	Fetching the profile returned a 401 - revoking our token and retrying
+1704912946434	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/oauth/destroy
+1704912946434	Services.Common.RESTRequest	DEBUG	POST Length: 900
+1704912946434	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1704912946435	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","device","encryptedSendTabKeys","oauthTokens","profileCache"]
+1704912946435	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","device","encryptedSendTabKeys","oauthTokens","profileCache"]
+1704912946435	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704912946435	FirefoxAccounts	TRACE	finished write of json user data - took: 0
+1704912946435	FirefoxAccounts	DEBUG	writing secure storage: ["scopedKeys"]
+1704912946435	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1704912946438	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1704912946438	Services.Common.RESTRequest	DEBUG	POST request to https://api.accounts.firefox.com/v1/oauth/token
+1704912946438	Services.Common.RESTRequest	DEBUG	POST Length: 81
+1704912946695	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/oauth/destroy 200
+1704912946695	Hawk	DEBUG	(Response) /oauth/destroy: code: 200 - Status text: 
+1704912946695	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -695
+1704912947164	Services.Common.RESTRequest	DEBUG	POST https://api.accounts.firefox.com/v1/oauth/token 200
+1704912947165	Hawk	DEBUG	(Response) /oauth/token: code: 200 - Status text: 
+1704912947165	Hawk	DEBUG	Clock offset vs https://api.accounts.firefox.com/v1: -1165
+1704912947165	FirefoxAccounts	DEBUG	_updateAccountData with items: ["oauthTokens"]
+1704912947165	FirefoxAccounts	DEBUG	writing plain storage: ["email","sessionToken","uid","verified","device","encryptedSendTabKeys","oauthTokens","profileCache"]
+1704912947165	FirefoxAccounts	TRACE	starting write of json user data: ["email","sessionToken","uid","verified","device","encryptedSendTabKeys","oauthTokens","profileCache"]
+1704912947165	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704912947165	FirefoxAccounts	TRACE	finished write of json user data - took: 0
+1704912947165	FirefoxAccounts	DEBUG	writing secure storage: ["scopedKeys"]
+1704912947165	FirefoxAccounts	TRACE	starting write of user data to the login manager
+1704912947167	FirefoxAccounts	TRACE	finished write of user data to the login manager
+1704912947396	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704916518567	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704917205614	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704918957450	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704918957450	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704918957453	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704918957453	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704918957454	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704918957734	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704922558512	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704922558512	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704922558513	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704922558513	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704922558514	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704922567758	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 502
+1704922567758	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":502,"errno":997,"error":"PARSE_ERROR","message":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+1704923804118	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704925243513	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704926159072	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704926159072	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704926159075	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704926159075	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704926159077	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704926159435	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704929759120	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704929759120	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704929759121	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704929759121	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704929759121	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1704929759469	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1704931329114	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704931329227	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1704931329227	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704931329228	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704931439813	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704931597789	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1704931598022	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1704931598022	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1704931598025	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704931598027	Sync.Service	DEBUG	User-Agent: Firefox/121.0 (Intel Mac OS X 10.15) FxSync/1.123.0.20231211174248.desktop
+1704931598027	Sync.Service	INFO	Starting sync at 2024-01-11 00:06:38 in browser session Nn_KQLoK9TKF
+1704931598028	Sync.Service	DEBUG	In sync: should login.
+1704931598028	Sync.Service	INFO	User logged in successfully - verifying login.
+1704931598029	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1704931598029	FirefoxAccounts	DEBUG	getOAuthToken enter
+1704931598029	Sync.SyncAuthManager	DEBUG	unlockAndVerifyAuthState finds that sync isn't configured
+1704931598029	Sync.Status	DEBUG	Status.login: error.login.reason.no_username => error.login.reason.no_username
+1704931598029	Sync.Status	DEBUG	Status.service: service.client_not_configured => service.client_not_configured
+1704931598029	Sync.Service	DEBUG	Fetching unlocked auth state returned error.login.reason.no_username
+1704931598030	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1704931598030	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704931598030	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1704931598031	Sync.Service	DEBUG	Exception calling WrappedLock: Error: Login failed: error.login.reason.no_username(resource://services-sync/service.sys.mjs:1038:15) JS Stack trace: onNotify@service.sys.mjs:1038:15
+1704931598032	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1704931598032	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1704931598032	Sync.Service	DEBUG	Not syncing: login returned false.
+1704931598033	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
