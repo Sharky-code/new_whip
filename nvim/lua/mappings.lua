@@ -36,3 +36,10 @@ tnoremap   <silent>   <F12>   <C-\><C-n>:FloatermToggle<CR>
 vim.cmd[[
 inoremap <silent> <Esc> <C-\><C-n>:lua local popup = require("nui.popup")({ enter = true, focusable = true, border = { style = "single", }, position = "50%", size = "20%" }) popup:mount() vim.api.nvim_buf_set_lines(popup.bufnr, 0, 1, false, { "Reminder: Use the motherfucking js instead of esc" }) <CR>
 ]]
+
+-- Codium
+vim.keymap.set('i', '<c-k>', function () return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
+vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end, { expr = true, silent = true })
+vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end, { expr = true, silent = true })
+vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
+

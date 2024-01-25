@@ -103,6 +103,10 @@ end
 
 -- > Mason .Setup() #001015
 require("mason").setup {}
+require("mason-lspconfig").setup {
+	ensure_installed = {'lua_ls', 'rust_analyzer'}
+}
+
 
 -- > LspSaga .Setup() #001016
 require("lspsaga").setup {
@@ -196,6 +200,20 @@ vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.s
 	border = "single",
 })
 
+-- https://vinnymeller.com/posts/neovim_nightly_inlay_hints/
+--[[
+vim.api.nvim_create_autocmd("LspAttach", {
+    group = vim.api.nvim_create_augroup("UserLspConfig", {}),
+    callback = function(args)
+        local client = vim.lsp.get_client_by_id(args.data.client_id)
+        if client.server_capabilities.inlayHintProvider then
+            vim.lsp.inlay_hint.enable(args.buf, true)
+        end
+    end
+})
+]]
+
+
 -- LSP Diagnostic Customisation -- #001050
 
 -- > Add Custom Signs (Copied from last config) #001051
@@ -217,7 +235,7 @@ local diagnostic_config = {
 	signs = {
 		active = signs,
 	},
-	update_in_insert = false,
+	update_in_insert = true,
 	underline = true,
 	severity_sort = true,
 	float = {

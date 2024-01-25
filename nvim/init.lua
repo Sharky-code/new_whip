@@ -55,7 +55,8 @@ a terminal to be effective
 		x. True Zen #00102a
 		xi. Dap and Neotest #00102b
 		xii. Github #00102c
-		xiii. Miscellaneous #00102d
+		xiii. AI #00102d
+		xiv. Miscellaneous #00102e
 	c. Lazy Options #001030
 2. .Setup() #001040
 	a. Lazy .Setup() #002010
@@ -70,6 +71,9 @@ a terminal to be effective
 	j. Neodev .Setup() #0020a0
 	k. Zen Mode .Setup() #0020b0
 	l. Alpha .Setup() #0020c0
+	m. ChatGPT .Setup() -- #0020d0
+	n. Gen .Setup() -- #0020e0
+	o. Obsidian .Setup() -- #0020f0
 4. Runtime Commands #00400
 ]]
 
@@ -103,6 +107,7 @@ local plugins = {
 	-- > Lsp #001023
 	"neovim/nvim-lspconfig",
 		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
 		"jose-elias-alvarez/null-ls.nvim",
 		"nvim-lua/plenary.nvim",
 		"folke/neodev.nvim",
@@ -168,7 +173,12 @@ local plugins = {
 	"kdheepak/lazygit.nvim",
 	"lewis6991/gitsigns.nvim",
 
-	-- > Misellaneous #00102d
+	-- > AI #00102d
+	"Exafunction/codeium.vim",
+	"David-Kunz/gen.nvim",
+	"jackMort/ChatGPT.nvim",
+
+	-- > Misellaneous #001023
 	"nvim-lua/plenary.nvim",
 	"folke/which-key.nvim",
 	-- "edluffy/hologram.nvim",
@@ -177,6 +187,8 @@ local plugins = {
 		"kevinhwang91/promise-async",
 	"MunifTanjim/nui.nvim",
 	-- "benlubas/wrapping-paper.nvim"  -- This is a promising plugin that I will use in the future when its fully developed
+	"epwalsh/obsidian.nvim",
+	"rcarriga/nvim-notify",
 }
 
 -- Lazy Options -- #001030
@@ -342,7 +354,36 @@ dashboard.section.buttons.val = {
 	dashboard.button( "q", "󰅚  Quit NVIM" , ":qa <CR>"),
 }
 dashboard.config.opts.noautocmd = true
---  r01_R. U. N. T. I. M. E.  C. O. M. M. A. N. D. S_ -- #004000
+
+-- ChatGPT .Setup() -- #0020d0
+--[[
+require("chatgpt").setup{
+   openai_params = { 
+     model = "gpt-3.5-turbo",
+   },
+   openai_edit_params = {
+     model = "gpt-3.5",
+   },
+}
+]]
+
+-- Gen .Setup() -- #0020e0
+require('gen').setup {}
+
+require("gen").model = "TEST1"
+require("gen").container = "ollama"
+
+-- Obsidian .Setup() -- #0020f0
+require("obsidian").setup {
+	workspaces = {
+		{
+		  name = "Everything Everywhere All Emilia",
+		  path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Ryo Church",
+		},
+	},
+}
+
+--  01. _R. U. N. T. I. M. E.  C. O. M. M. A. N. D. S_ -- #004000
 
 vim.cmd(":TransparentEnable")
 vim.cmd(":color tokyonight")
@@ -353,3 +394,4 @@ require("mappings")
 -- require("lua.alpha")
 
 -- NOENTRYBEYONDPOINT --> TESTING GROUNDS :>
+
